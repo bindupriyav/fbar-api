@@ -11,6 +11,7 @@ class Settings(BaseSettings):
     RATE_LIMIT_MAX: int = 100
     RATE_LIMIT_WINDOW_SECONDS: int = 60
     AWS_ENDPOINT_URL: str | None = None
+    AWS_REGION: str = "us-east-2"
     AUTH_TOKEN_STORE: str = "tokens.json"
 
     model_config = {

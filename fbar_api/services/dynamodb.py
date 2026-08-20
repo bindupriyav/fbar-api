@@ -30,7 +30,7 @@ class DynamoDBService:
         self._table_name = settings.DYNAMODB_TABLE_NAME
 
         # Build boto3 resource kwargs with optional endpoint URL (for LocalStack)
-        resource_kwargs: dict = {"service_name": "dynamodb"}
+        resource_kwargs: dict = {"service_name": "dynamodb", "region_name": settings.AWS_REGION}
         if settings.AWS_ENDPOINT_URL:
             resource_kwargs["endpoint_url"] = settings.AWS_ENDPOINT_URL
 
@@ -38,7 +38,7 @@ class DynamoDBService:
         self._table = self._resource.Table(self._table_name)
 
         # Low-level client for operations like describe_table
-        client_kwargs: dict = {"service_name": "dynamodb"}
+        client_kwargs: dict = {"service_name": "dynamodb", "region_name": settings.AWS_REGION}
         if settings.AWS_ENDPOINT_URL:
             client_kwargs["endpoint_url"] = settings.AWS_ENDPOINT_URL
 

@@ -24,6 +24,7 @@ class S3Service:
         self._settings = settings
         client_kwargs: dict = {
             "service_name": "s3",
+            "region_name": settings.AWS_REGION,
         }
         if settings.AWS_ENDPOINT_URL:
             client_kwargs["endpoint_url"] = settings.AWS_ENDPOINT_URL
@@ -87,6 +88,7 @@ class S3Service:
             # Create a one-off client with the timeout for the health check
             client_kwargs: dict = {
                 "service_name": "s3",
+                "region_name": self._settings.AWS_REGION,
                 "config": timeout_config,
             }
             if self._settings.AWS_ENDPOINT_URL:
