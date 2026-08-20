@@ -66,3 +66,7 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     )
 
     return app
+
+
+# Module-level app instance for uvicorn (uvicorn fbar_api.main:app)
+app = create_app()
