@@ -1,0 +1,3702 @@
+{
+  "$schema": "synthetic-fbar-fixture-v1",
+  "disclaimer": "ALL DATA IN THIS FILE IS SYNTHETIC AND FICTIONAL. Names, TINs, account numbers, institutions, and addresses do not correspond to real persons, entities, or accounts. TINs use the 900-xx-xxxx and 98-xxxxxxx ranges reserved for testing and are not valid/issuable SSNs or EINs. Generated for integration/QA testing of a case management API only.",
+  "generated_for": "IRS Case Management Modernization - FBAR API Test Harness",
+  "record_count": 50,
+  "filings": [
+    {
+      "bsaId": "31000000000001",
+      "submissionType": "Original",
+      "filingStatus": "Accepted",
+      "taxYear": 2023,
+      "dateFiled": "2024-05-07",
+      "priorReportBsaId": null,
+      "filer": {
+        "filerType": "Individual",
+        "usPersonCategory": "Resident Alien",
+        "tin": {
+          "type": "SSN",
+          "value": "900-51-1424"
+        },
+        "name": {
+          "last": "Kowalski",
+          "first": "Chidi",
+          "middle": "E"
+        },
+        "address": {
+          "street": "666 Fieldstone Ave",
+          "city": "Plano",
+          "stateOrProvince": "TX",
+          "zipOrPostal": "44507",
+          "country": "US"
+        },
+        "dateOfBirth": "1958-07-04",
+        "occupation": "Small Business Owner"
+      },
+      "jointFilers": [],
+      "financialAccounts": [
+        {
+          "accountNumber": "TEST-ACCT-0001-A",
+          "accountType": "Bank",
+          "currency": "CAD",
+          "financialInstitution": {
+            "name": "Northern Shore Credit Union",
+            "address": {
+              "city": "Halifax",
+              "country": "CA"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 475283.85
+        }
+      ],
+      "signature": {
+        "signed": true,
+        "signatureDate": "2024-05-07",
+        "preparerUsed": false
+      },
+      "pdfDocument": {
+        "fileName": "FBAR_31000000000001.pdf",
+        "s3Bucket": "irs-cm-fbar-documents-dev",
+        "s3Key": "fbar-pdfs/2023/FBAR_31000000000001.pdf",
+        "contentType": "application/pdf",
+        "sizeBytes": 4256,
+        "sha256": "5b9303f113cc332c455e20ad1abbc74210b46fc7626cf2926d526bbcd667e214",
+        "generatedFrom": "synthetic_fbar_filings.json",
+        "note": "Specimen PDF rendered to mirror the FinCEN Form 114 field layout; not an official FinCEN document."
+      }
+    },
+    {
+      "bsaId": "31000000000002",
+      "submissionType": "Original",
+      "filingStatus": "Accepted",
+      "taxYear": 2023,
+      "dateFiled": "2024-07-13",
+      "priorReportBsaId": null,
+      "filer": {
+        "filerType": "Individual",
+        "usPersonCategory": "Citizen",
+        "tin": {
+          "type": "SSN",
+          "value": "900-12-7030"
+        },
+        "name": {
+          "last": "Castellano",
+          "first": "Kenji",
+          "middle": "F"
+        },
+        "address": {
+          "street": "372 Fieldstone Ave",
+          "city": "Bellevue",
+          "stateOrProvince": "WA",
+          "zipOrPostal": "76635",
+          "country": "US"
+        },
+        "dateOfBirth": "1978-12-20",
+        "occupation": "Small Business Owner"
+      },
+      "jointFilers": [],
+      "financialAccounts": [
+        {
+          "accountNumber": "TEST-ACCT-0002-A",
+          "accountType": "Bank",
+          "currency": "EUR",
+          "financialInstitution": {
+            "name": "Baltic Coast Savings Bank",
+            "address": {
+              "city": "Riga",
+              "country": "LV"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": true,
+          "maxAccountValueUSD": 89202.93
+        }
+      ],
+      "signature": {
+        "signed": true,
+        "signatureDate": "2024-07-13",
+        "preparerUsed": false
+      },
+      "pdfDocument": {
+        "fileName": "FBAR_31000000000002.pdf",
+        "s3Bucket": "irs-cm-fbar-documents-dev",
+        "s3Key": "fbar-pdfs/2023/FBAR_31000000000002.pdf",
+        "contentType": "application/pdf",
+        "sizeBytes": 4243,
+        "sha256": "128b02e3defc9f3dad92c8c8feb70cafd7c347cbf712d719e71ef0d42df59125",
+        "generatedFrom": "synthetic_fbar_filings.json",
+        "note": "Specimen PDF rendered to mirror the FinCEN Form 114 field layout; not an official FinCEN document."
+      }
+    },
+    {
+      "bsaId": "31000000000003",
+      "submissionType": "Original",
+      "filingStatus": "Accepted",
+      "taxYear": 2024,
+      "dateFiled": "2025-04-17",
+      "priorReportBsaId": null,
+      "filer": {
+        "filerType": "Individual",
+        "usPersonCategory": "Citizen",
+        "tin": {
+          "type": "SSN",
+          "value": "900-67-4599"
+        },
+        "name": {
+          "last": "Meier",
+          "first": "Elena",
+          "middle": null
+        },
+        "address": {
+          "street": "642 Harbor View Cir",
+          "city": "Chicago",
+          "stateOrProvince": "IL",
+          "zipOrPostal": "36601",
+          "country": "US"
+        },
+        "dateOfBirth": "1996-10-25",
+        "occupation": "Accountant"
+      },
+      "jointFilers": [],
+      "financialAccounts": [
+        {
+          "accountNumber": "TEST-ACCT-0003-A",
+          "accountType": "Bank",
+          "currency": "PEN",
+          "financialInstitution": {
+            "name": "Andean Cooperative Bank",
+            "address": {
+              "city": "Lima",
+              "country": "PE"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 278505.31
+        },
+        {
+          "accountNumber": "TEST-ACCT-0003-B",
+          "accountType": "Other",
+          "currency": "USD",
+          "financialInstitution": {
+            "name": "Caribe International Bank",
+            "address": {
+              "city": "George Town",
+              "country": "KY"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "accountTypeOtherDescription": "Precious metals custody account",
+          "maxAccountValueUSD": 27558.86
+        }
+      ],
+      "signature": {
+        "signed": true,
+        "signatureDate": "2025-04-17",
+        "preparerUsed": false
+      },
+      "pdfDocument": {
+        "fileName": "FBAR_31000000000003.pdf",
+        "s3Bucket": "irs-cm-fbar-documents-dev",
+        "s3Key": "fbar-pdfs/2024/FBAR_31000000000003.pdf",
+        "contentType": "application/pdf",
+        "sizeBytes": 4360,
+        "sha256": "c532f4a8df377bd9f485f055f62d0b23141922e2e1977a737ef445e3300fb8ef",
+        "generatedFrom": "synthetic_fbar_filings.json",
+        "note": "Specimen PDF rendered to mirror the FinCEN Form 114 field layout; not an official FinCEN document."
+      }
+    },
+    {
+      "bsaId": "31000000000004",
+      "submissionType": "Original",
+      "filingStatus": "Accepted",
+      "taxYear": 2024,
+      "dateFiled": "2025-02-25",
+      "priorReportBsaId": null,
+      "filer": {
+        "filerType": "Individual",
+        "usPersonCategory": "Citizen",
+        "tin": {
+          "type": "SSN",
+          "value": "900-85-6664"
+        },
+        "name": {
+          "last": "S\u00f8rensen",
+          "first": "Oliver",
+          "middle": "H"
+        },
+        "address": {
+          "street": "923 Lakeshore Ln",
+          "city": "New Orleans",
+          "stateOrProvince": "LA",
+          "zipOrPostal": "14426",
+          "country": "US"
+        },
+        "dateOfBirth": "1970-02-12",
+        "occupation": "Professor"
+      },
+      "jointFilers": [],
+      "financialAccounts": [
+        {
+          "accountNumber": "TEST-ACCT-0004-A",
+          "accountType": "Bank",
+          "currency": "AED",
+          "financialInstitution": {
+            "name": "Red Sea Trading Bank",
+            "address": {
+              "city": "Dubai",
+              "country": "AE"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 47787.06
+        }
+      ],
+      "signature": {
+        "signed": true,
+        "signatureDate": "2025-02-25",
+        "preparerUsed": false
+      },
+      "pdfDocument": {
+        "fileName": "FBAR_31000000000004.pdf",
+        "s3Bucket": "irs-cm-fbar-documents-dev",
+        "s3Key": "fbar-pdfs/2024/FBAR_31000000000004.pdf",
+        "contentType": "application/pdf",
+        "sizeBytes": 4223,
+        "sha256": "039f6717e94896a92c8dbadcb80344794ffe2f58198a62cd7ab7aae83bbd6b52",
+        "generatedFrom": "synthetic_fbar_filings.json",
+        "note": "Specimen PDF rendered to mirror the FinCEN Form 114 field layout; not an official FinCEN document."
+      }
+    },
+    {
+      "bsaId": "31000000000005",
+      "submissionType": "Original",
+      "filingStatus": "Accepted",
+      "taxYear": 2022,
+      "dateFiled": "2023-02-14",
+      "priorReportBsaId": null,
+      "filer": {
+        "filerType": "Individual",
+        "usPersonCategory": "Citizen",
+        "tin": {
+          "type": "SSN",
+          "value": "900-38-2960"
+        },
+        "name": {
+          "last": "Kovac",
+          "first": "Simone",
+          "middle": null
+        },
+        "address": {
+          "street": "233 Maple Hollow St",
+          "city": "New York",
+          "stateOrProvince": "NY",
+          "zipOrPostal": "39833",
+          "country": "US"
+        },
+        "dateOfBirth": "1989-05-20",
+        "occupation": "Accountant"
+      },
+      "jointFilers": [
+        {
+          "tin": {
+            "type": "SSN",
+            "value": "900-17-3207"
+          },
+          "name": {
+            "last": "Kovac",
+            "first": "Rafael",
+            "middle": null
+          },
+          "relationship": "Spouse"
+        }
+      ],
+      "financialAccounts": [
+        {
+          "accountNumber": "TEST-ACCT-0005-A",
+          "accountType": "Securities",
+          "currency": "PLN",
+          "financialInstitution": {
+            "name": "Continental Union Bank",
+            "address": {
+              "city": "Warsaw",
+              "country": "PL"
+            }
+          },
+          "jointOwnerCount": 1,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 32444.34
+        },
+        {
+          "accountNumber": "TEST-ACCT-0005-B",
+          "accountType": "SignatureAuthorityOnly",
+          "currency": "EUR",
+          "financialInstitution": {
+            "name": "Nordbank Handelsbank AG",
+            "address": {
+              "city": "Frankfurt",
+              "country": "DE"
+            }
+          },
+          "jointOwnerCount": 1,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 0,
+          "note": "Filer has signature authority only, no financial interest; account value not required"
+        }
+      ],
+      "signature": {
+        "signed": true,
+        "signatureDate": "2023-02-14",
+        "preparerUsed": false
+      },
+      "pdfDocument": {
+        "fileName": "FBAR_31000000000005.pdf",
+        "s3Bucket": "irs-cm-fbar-documents-dev",
+        "s3Key": "fbar-pdfs/2022/FBAR_31000000000005.pdf",
+        "contentType": "application/pdf",
+        "sizeBytes": 4852,
+        "sha256": "f6100cacb6441a2d03c4c03d1de5e8d34ab25c847b18282ccfaacbb7934a4227",
+        "generatedFrom": "synthetic_fbar_filings.json",
+        "note": "Specimen PDF rendered to mirror the FinCEN Form 114 field layout; not an official FinCEN document."
+      }
+    },
+    {
+      "bsaId": "31000000000006",
+      "submissionType": "Original",
+      "filingStatus": "Accepted",
+      "taxYear": 2022,
+      "dateFiled": "2023-03-05",
+      "priorReportBsaId": null,
+      "filer": {
+        "filerType": "Individual",
+        "usPersonCategory": "Citizen",
+        "tin": {
+          "type": "SSN",
+          "value": "900-31-8531"
+        },
+        "name": {
+          "last": "Nakamura",
+          "first": "Yasmin",
+          "middle": "G"
+        },
+        "address": {
+          "street": "921 Magnolia Ave",
+          "city": "Portland",
+          "stateOrProvince": "ME",
+          "zipOrPostal": "83957",
+          "country": "US"
+        },
+        "dateOfBirth": "2000-01-04",
+        "occupation": "Journalist"
+      },
+      "jointFilers": [
+        {
+          "tin": {
+            "type": "SSN",
+            "value": "900-92-8211"
+          },
+          "name": {
+            "last": "Nakamura",
+            "first": "Noor",
+            "middle": null
+          },
+          "relationship": "Spouse"
+        }
+      ],
+      "financialAccounts": [
+        {
+          "accountNumber": "TEST-ACCT-0006-A",
+          "accountType": "Securities",
+          "currency": "CHF",
+          "financialInstitution": {
+            "name": "Alpine Privatbank",
+            "address": {
+              "city": "Zurich",
+              "country": "CH"
+            }
+          },
+          "jointOwnerCount": 1,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 106412.26
+        },
+        {
+          "accountNumber": "TEST-ACCT-0006-B",
+          "accountType": "Bank",
+          "currency": "EUR",
+          "financialInstitution": {
+            "name": "Nordbank Handelsbank AG",
+            "address": {
+              "city": "Frankfurt",
+              "country": "DE"
+            }
+          },
+          "jointOwnerCount": 1,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 28693.83
+        },
+        {
+          "accountNumber": "TEST-ACCT-0006-C",
+          "accountType": "Bank",
+          "currency": "EUR",
+          "financialInstitution": {
+            "name": "Credit Littoral",
+            "address": {
+              "city": "Nice",
+              "country": "FR"
+            }
+          },
+          "jointOwnerCount": 1,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 3528410.38
+        }
+      ],
+      "signature": {
+        "signed": true,
+        "signatureDate": "2023-03-05",
+        "preparerUsed": true,
+        "preparerPtin": "P906372"
+      },
+      "pdfDocument": {
+        "fileName": "FBAR_31000000000006.pdf",
+        "s3Bucket": "irs-cm-fbar-documents-dev",
+        "s3Key": "fbar-pdfs/2022/FBAR_31000000000006.pdf",
+        "contentType": "application/pdf",
+        "sizeBytes": 5060,
+        "sha256": "7f5fdcad8a75e21275b1c41076d81262af6848b78c9226e9eea9bf3feb8a65db",
+        "generatedFrom": "synthetic_fbar_filings.json",
+        "note": "Specimen PDF rendered to mirror the FinCEN Form 114 field layout; not an official FinCEN document."
+      }
+    },
+    {
+      "bsaId": "31000000000007",
+      "submissionType": "Original",
+      "filingStatus": "Accepted",
+      "taxYear": 2022,
+      "dateFiled": "2023-01-14",
+      "priorReportBsaId": null,
+      "filer": {
+        "filerType": "Individual",
+        "usPersonCategory": "Citizen",
+        "tin": {
+          "type": "SSN",
+          "value": "900-87-1616"
+        },
+        "name": {
+          "last": "Silva",
+          "first": "Piotr",
+          "middle": null
+        },
+        "address": {
+          "street": "682 Magnolia Ct",
+          "city": "Wilmington",
+          "stateOrProvince": "DE",
+          "zipOrPostal": "55538",
+          "country": "US"
+        },
+        "dateOfBirth": "1987-11-01",
+        "occupation": "Import/Export Trader"
+      },
+      "jointFilers": [],
+      "financialAccounts": [
+        {
+          "accountNumber": "TEST-ACCT-0007-A",
+          "accountType": "Bank",
+          "currency": "SGD",
+          "financialInstitution": {
+            "name": "Global Trade Finance Bank",
+            "address": {
+              "city": "Singapore",
+              "country": "SG"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 44668.7
+        },
+        {
+          "accountNumber": "TEST-ACCT-0007-B",
+          "accountType": "Bank",
+          "currency": "AED",
+          "financialInstitution": {
+            "name": "Red Sea Trading Bank",
+            "address": {
+              "city": "Dubai",
+              "country": "AE"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 30789.44
+        },
+        {
+          "accountNumber": "TEST-ACCT-0007-C",
+          "accountType": "Bank",
+          "currency": "EUR",
+          "financialInstitution": {
+            "name": "Baltic Coast Savings Bank",
+            "address": {
+              "city": "Riga",
+              "country": "LV"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 9617.86
+        }
+      ],
+      "signature": {
+        "signed": true,
+        "signatureDate": "2023-01-14",
+        "preparerUsed": false
+      },
+      "pdfDocument": {
+        "fileName": "FBAR_31000000000007.pdf",
+        "s3Bucket": "irs-cm-fbar-documents-dev",
+        "s3Key": "fbar-pdfs/2022/FBAR_31000000000007.pdf",
+        "contentType": "application/pdf",
+        "sizeBytes": 4409,
+        "sha256": "6bcfa14857f80ce3a7df5303512203cca1f6a3eb59c14bc63b81e7d31a503091",
+        "generatedFrom": "synthetic_fbar_filings.json",
+        "note": "Specimen PDF rendered to mirror the FinCEN Form 114 field layout; not an official FinCEN document."
+      }
+    },
+    {
+      "bsaId": "31000000000008",
+      "submissionType": "Original",
+      "filingStatus": "Accepted",
+      "taxYear": 2024,
+      "dateFiled": "2025-06-06",
+      "priorReportBsaId": null,
+      "filer": {
+        "filerType": "Individual",
+        "usPersonCategory": "Citizen",
+        "tin": {
+          "type": "SSN",
+          "value": "900-24-1330"
+        },
+        "name": {
+          "last": "Larsson",
+          "first": "Ijeoma",
+          "middle": null
+        },
+        "address": {
+          "street": "227 Sunset Cir",
+          "city": "San Jose",
+          "stateOrProvince": "CA",
+          "zipOrPostal": "34263",
+          "country": "US"
+        },
+        "dateOfBirth": "1974-06-27",
+        "occupation": "Small Business Owner"
+      },
+      "jointFilers": [],
+      "financialAccounts": [
+        {
+          "accountNumber": "TEST-ACCT-0008-A",
+          "accountType": "Other",
+          "currency": "GBP",
+          "financialInstitution": {
+            "name": "Kensington Fiduciary Trust Ltd",
+            "address": {
+              "city": "London",
+              "country": "GB"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "accountTypeOtherDescription": "Precious metals custody account",
+          "maxAccountValueUSD": 86286.11
+        }
+      ],
+      "signature": {
+        "signed": true,
+        "signatureDate": "2025-06-06",
+        "preparerUsed": false
+      },
+      "pdfDocument": {
+        "fileName": "FBAR_31000000000008.pdf",
+        "s3Bucket": "irs-cm-fbar-documents-dev",
+        "s3Key": "fbar-pdfs/2024/FBAR_31000000000008.pdf",
+        "contentType": "application/pdf",
+        "sizeBytes": 4269,
+        "sha256": "a35ae453e443dcdf017835edddf8f1ac5674b5eb4e434197234d50b0d80450df",
+        "generatedFrom": "synthetic_fbar_filings.json",
+        "note": "Specimen PDF rendered to mirror the FinCEN Form 114 field layout; not an official FinCEN document."
+      }
+    },
+    {
+      "bsaId": "31000000000009",
+      "submissionType": "Original",
+      "filingStatus": "Accepted",
+      "taxYear": 2022,
+      "dateFiled": "2023-06-26",
+      "priorReportBsaId": null,
+      "filer": {
+        "filerType": "Individual",
+        "usPersonCategory": "Resident Alien",
+        "tin": {
+          "type": "SSN",
+          "value": "900-82-6455"
+        },
+        "name": {
+          "last": "Karlsson",
+          "first": "Astrid",
+          "middle": null
+        },
+        "address": {
+          "street": "455 Cedar Ridge Dr",
+          "city": "Miami",
+          "stateOrProvince": "FL",
+          "zipOrPostal": "65016",
+          "country": "US"
+        },
+        "dateOfBirth": "1964-10-19",
+        "occupation": "Marine Surveyor"
+      },
+      "jointFilers": [
+        {
+          "tin": {
+            "type": "SSN",
+            "value": "900-97-2867"
+          },
+          "name": {
+            "last": "Karlsson",
+            "first": "Dmitri",
+            "middle": null
+          },
+          "relationship": "Spouse"
+        }
+      ],
+      "financialAccounts": [
+        {
+          "accountNumber": "TEST-ACCT-0009-A",
+          "accountType": "Securities",
+          "currency": "EUR",
+          "financialInstitution": {
+            "name": "Credit Littoral",
+            "address": {
+              "city": "Nice",
+              "country": "FR"
+            }
+          },
+          "jointOwnerCount": 1,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 92165.91
+        }
+      ],
+      "signature": {
+        "signed": true,
+        "signatureDate": "2023-06-26",
+        "preparerUsed": true,
+        "preparerPtin": "P907850"
+      },
+      "pdfDocument": {
+        "fileName": "FBAR_31000000000009.pdf",
+        "s3Bucket": "irs-cm-fbar-documents-dev",
+        "s3Key": "fbar-pdfs/2022/FBAR_31000000000009.pdf",
+        "contentType": "application/pdf",
+        "sizeBytes": 4367,
+        "sha256": "c40da6140377042ebc1b7bcba8cf50d76333c09c7ed8e871218eff95378eab0c",
+        "generatedFrom": "synthetic_fbar_filings.json",
+        "note": "Specimen PDF rendered to mirror the FinCEN Form 114 field layout; not an official FinCEN document."
+      }
+    },
+    {
+      "bsaId": "31000000000010",
+      "submissionType": "Original",
+      "filingStatus": "Accepted",
+      "taxYear": 2022,
+      "dateFiled": "2023-09-22",
+      "priorReportBsaId": null,
+      "filer": {
+        "filerType": "Individual",
+        "usPersonCategory": "Citizen",
+        "tin": {
+          "type": "SSN",
+          "value": "900-39-5337"
+        },
+        "name": {
+          "last": "Steiner",
+          "first": "Rafael",
+          "middle": null
+        },
+        "address": {
+          "street": "706 Lakeshore Ave",
+          "city": "Atlanta",
+          "stateOrProvince": "GA",
+          "zipOrPostal": "89358",
+          "country": "US"
+        },
+        "dateOfBirth": "1985-09-09",
+        "occupation": "Airline Pilot"
+      },
+      "jointFilers": [
+        {
+          "tin": {
+            "type": "SSN",
+            "value": "900-25-3099"
+          },
+          "name": {
+            "last": "Steiner",
+            "first": "Camille",
+            "middle": null
+          },
+          "relationship": "Spouse"
+        }
+      ],
+      "financialAccounts": [
+        {
+          "accountNumber": "TEST-ACCT-0010-A",
+          "accountType": "Bank",
+          "currency": "IDR",
+          "financialInstitution": {
+            "name": "Sunda Strait Commercial Bank",
+            "address": {
+              "city": "Jakarta",
+              "country": "ID"
+            }
+          },
+          "jointOwnerCount": 1,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 200213.68
+        },
+        {
+          "accountNumber": "TEST-ACCT-0010-B",
+          "accountType": "Other",
+          "currency": "USD",
+          "financialInstitution": {
+            "name": "Caribe International Bank",
+            "address": {
+              "city": "George Town",
+              "country": "KY"
+            }
+          },
+          "jointOwnerCount": 1,
+          "accountClosedDuringYear": false,
+          "accountTypeOtherDescription": "Life insurance cash value account",
+          "maxAccountValueUSD": 110555.88
+        }
+      ],
+      "signature": {
+        "signed": true,
+        "signatureDate": "2023-09-22",
+        "preparerUsed": false
+      },
+      "pdfDocument": {
+        "fileName": "FBAR_31000000000010.pdf",
+        "s3Bucket": "irs-cm-fbar-documents-dev",
+        "s3Key": "fbar-pdfs/2022/FBAR_31000000000010.pdf",
+        "contentType": "application/pdf",
+        "sizeBytes": 4905,
+        "sha256": "acb4af3fce989517941d3e9376ef7f8cd145fa0550fe7f2619d978bca520774f",
+        "generatedFrom": "synthetic_fbar_filings.json",
+        "note": "Specimen PDF rendered to mirror the FinCEN Form 114 field layout; not an official FinCEN document."
+      }
+    },
+    {
+      "bsaId": "31000000000011",
+      "submissionType": "Original",
+      "filingStatus": "Accepted",
+      "taxYear": 2022,
+      "dateFiled": "2023-06-19",
+      "priorReportBsaId": null,
+      "filer": {
+        "filerType": "Individual",
+        "usPersonCategory": "Citizen",
+        "tin": {
+          "type": "SSN",
+          "value": "900-92-8560"
+        },
+        "name": {
+          "last": "Nakashima",
+          "first": "Noor",
+          "middle": "J"
+        },
+        "address": {
+          "street": "726 Sunset St",
+          "city": "Boston",
+          "stateOrProvince": "MA",
+          "zipOrPostal": "48057",
+          "country": "US"
+        },
+        "dateOfBirth": "1988-05-05",
+        "occupation": "Real Estate Broker"
+      },
+      "jointFilers": [],
+      "financialAccounts": [
+        {
+          "accountNumber": "TEST-ACCT-0011-A",
+          "accountType": "Bank",
+          "currency": "EUR",
+          "financialInstitution": {
+            "name": "Baltic Coast Savings Bank",
+            "address": {
+              "city": "Riga",
+              "country": "LV"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": true,
+          "maxAccountValueUSD": 7324282.44
+        }
+      ],
+      "signature": {
+        "signed": true,
+        "signatureDate": "2023-06-19",
+        "preparerUsed": false
+      },
+      "pdfDocument": {
+        "fileName": "FBAR_31000000000011.pdf",
+        "s3Bucket": "irs-cm-fbar-documents-dev",
+        "s3Key": "fbar-pdfs/2022/FBAR_31000000000011.pdf",
+        "contentType": "application/pdf",
+        "sizeBytes": 4241,
+        "sha256": "297265712a5f12d5d913bfbfc5ad353e82be371a35789257dde793f2ddce9e3d",
+        "generatedFrom": "synthetic_fbar_filings.json",
+        "note": "Specimen PDF rendered to mirror the FinCEN Form 114 field layout; not an official FinCEN document."
+      }
+    },
+    {
+      "bsaId": "31000000000012",
+      "submissionType": "Original",
+      "filingStatus": "Accepted",
+      "taxYear": 2024,
+      "dateFiled": "2025-07-12",
+      "priorReportBsaId": null,
+      "filer": {
+        "filerType": "Individual",
+        "usPersonCategory": "Citizen",
+        "tin": {
+          "type": "SSN",
+          "value": "900-67-1771"
+        },
+        "name": {
+          "last": "Whitfield",
+          "first": "Tobias",
+          "middle": null
+        },
+        "address": {
+          "street": "832 Birchwood Ct",
+          "city": "Phoenix",
+          "stateOrProvince": "AZ",
+          "zipOrPostal": "81633",
+          "country": "US"
+        },
+        "dateOfBirth": "1975-06-13",
+        "occupation": "Small Business Owner"
+      },
+      "jointFilers": [],
+      "financialAccounts": [
+        {
+          "accountNumber": "TEST-ACCT-0012-A",
+          "accountType": "Bank",
+          "currency": "GBP",
+          "financialInstitution": {
+            "name": "Highland Merchant Bank",
+            "address": {
+              "city": "Edinburgh",
+              "country": "GB"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 4575.63
+        }
+      ],
+      "signature": {
+        "signed": true,
+        "signatureDate": "2025-07-12",
+        "preparerUsed": false
+      },
+      "pdfDocument": {
+        "fileName": "FBAR_31000000000012.pdf",
+        "s3Bucket": "irs-cm-fbar-documents-dev",
+        "s3Key": "fbar-pdfs/2024/FBAR_31000000000012.pdf",
+        "contentType": "application/pdf",
+        "sizeBytes": 4241,
+        "sha256": "60c3545725fff714b1ac04d0b74007086aa62614c8436a072e445736896036de",
+        "generatedFrom": "synthetic_fbar_filings.json",
+        "note": "Specimen PDF rendered to mirror the FinCEN Form 114 field layout; not an official FinCEN document."
+      }
+    },
+    {
+      "bsaId": "31000000000013",
+      "submissionType": "Original",
+      "filingStatus": "Accepted",
+      "taxYear": 2022,
+      "dateFiled": "2023-01-18",
+      "priorReportBsaId": null,
+      "filer": {
+        "filerType": "Individual",
+        "usPersonCategory": "Citizen",
+        "tin": {
+          "type": "SSN",
+          "value": "900-34-7212"
+        },
+        "name": {
+          "last": "van der Berg",
+          "first": "Priya",
+          "middle": null
+        },
+        "address": {
+          "street": "155 Birchwood Dr",
+          "city": "Denver",
+          "stateOrProvince": "CO",
+          "zipOrPostal": "68933",
+          "country": "US"
+        },
+        "dateOfBirth": "1975-02-23",
+        "occupation": "Nurse Practitioner"
+      },
+      "jointFilers": [],
+      "financialAccounts": [
+        {
+          "accountNumber": "TEST-ACCT-0013-A",
+          "accountType": "Securities",
+          "currency": "SGD",
+          "financialInstitution": {
+            "name": "Global Trade Finance Bank",
+            "address": {
+              "city": "Singapore",
+              "country": "SG"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 7441652.36
+        }
+      ],
+      "signature": {
+        "signed": true,
+        "signatureDate": "2023-01-18",
+        "preparerUsed": true,
+        "preparerPtin": "P909692"
+      },
+      "pdfDocument": {
+        "fileName": "FBAR_31000000000013.pdf",
+        "s3Bucket": "irs-cm-fbar-documents-dev",
+        "s3Key": "fbar-pdfs/2022/FBAR_31000000000013.pdf",
+        "contentType": "application/pdf",
+        "sizeBytes": 4276,
+        "sha256": "b89fb26e2c7292a042318b19fe604066586c1b9a28120a4a33cca0b5f0083e27",
+        "generatedFrom": "synthetic_fbar_filings.json",
+        "note": "Specimen PDF rendered to mirror the FinCEN Form 114 field layout; not an official FinCEN document."
+      }
+    },
+    {
+      "bsaId": "31000000000014",
+      "submissionType": "Original",
+      "filingStatus": "Accepted",
+      "taxYear": 2022,
+      "dateFiled": "2023-10-04",
+      "priorReportBsaId": null,
+      "filer": {
+        "filerType": "Individual",
+        "usPersonCategory": "Citizen",
+        "tin": {
+          "type": "SSN",
+          "value": "900-15-8203"
+        },
+        "name": {
+          "last": "Bakshi",
+          "first": "Dmitri",
+          "middle": null
+        },
+        "address": {
+          "street": "296 Lakeshore Ave",
+          "city": "Charlotte",
+          "stateOrProvince": "NC",
+          "zipOrPostal": "30012",
+          "country": "US"
+        },
+        "dateOfBirth": "1970-08-25",
+        "occupation": "Data Scientist"
+      },
+      "jointFilers": [],
+      "financialAccounts": [
+        {
+          "accountNumber": "TEST-ACCT-0014-A",
+          "accountType": "Bank",
+          "currency": "IDR",
+          "financialInstitution": {
+            "name": "Sunda Strait Commercial Bank",
+            "address": {
+              "city": "Jakarta",
+              "country": "ID"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 17126.16
+        }
+      ],
+      "signature": {
+        "signed": true,
+        "signatureDate": "2023-10-04",
+        "preparerUsed": false
+      },
+      "pdfDocument": {
+        "fileName": "FBAR_31000000000014.pdf",
+        "s3Bucket": "irs-cm-fbar-documents-dev",
+        "s3Key": "fbar-pdfs/2022/FBAR_31000000000014.pdf",
+        "contentType": "application/pdf",
+        "sizeBytes": 4235,
+        "sha256": "236987eb05a364f862d23bd10b07fd817517b3f5e312f22b815f7b0a02e772e2",
+        "generatedFrom": "synthetic_fbar_filings.json",
+        "note": "Specimen PDF rendered to mirror the FinCEN Form 114 field layout; not an official FinCEN document."
+      }
+    },
+    {
+      "bsaId": "31000000000015",
+      "submissionType": "Original",
+      "filingStatus": "Accepted",
+      "taxYear": 2023,
+      "dateFiled": "2024-04-26",
+      "priorReportBsaId": null,
+      "filer": {
+        "filerType": "Individual",
+        "usPersonCategory": "Resident Alien",
+        "tin": {
+          "type": "SSN",
+          "value": "900-21-8949"
+        },
+        "name": {
+          "last": "Adeyemi",
+          "first": "Camille",
+          "middle": "L"
+        },
+        "address": {
+          "street": "746 Magnolia Rd",
+          "city": "Detroit",
+          "stateOrProvince": "MI",
+          "zipOrPostal": "49291",
+          "country": "US"
+        },
+        "dateOfBirth": "1980-01-13",
+        "occupation": "Accountant"
+      },
+      "jointFilers": [
+        {
+          "tin": {
+            "type": "SSN",
+            "value": "900-53-3953"
+          },
+          "name": {
+            "last": "Adeyemi",
+            "first": "Amara",
+            "middle": null
+          },
+          "relationship": "Spouse"
+        }
+      ],
+      "financialAccounts": [
+        {
+          "accountNumber": "TEST-ACCT-0015-A",
+          "accountType": "Bank",
+          "currency": "NZD",
+          "financialInstitution": {
+            "name": "Vantage Antipodes Bank",
+            "address": {
+              "city": "Auckland",
+              "country": "NZ"
+            }
+          },
+          "jointOwnerCount": 1,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 15996.27
+        }
+      ],
+      "signature": {
+        "signed": true,
+        "signatureDate": "2024-04-26",
+        "preparerUsed": false
+      },
+      "pdfDocument": {
+        "fileName": "FBAR_31000000000015.pdf",
+        "s3Bucket": "irs-cm-fbar-documents-dev",
+        "s3Key": "fbar-pdfs/2023/FBAR_31000000000015.pdf",
+        "contentType": "application/pdf",
+        "sizeBytes": 4330,
+        "sha256": "82d748118904cbb2bb7b5297a888183c2a02761da7e934c8b691b41250ccffdb",
+        "generatedFrom": "synthetic_fbar_filings.json",
+        "note": "Specimen PDF rendered to mirror the FinCEN Form 114 field layout; not an official FinCEN document."
+      }
+    },
+    {
+      "bsaId": "31000000000016",
+      "submissionType": "Original",
+      "filingStatus": "Accepted",
+      "taxYear": 2022,
+      "dateFiled": "2023-07-25",
+      "priorReportBsaId": null,
+      "filer": {
+        "filerType": "Individual",
+        "usPersonCategory": "Resident Alien",
+        "tin": {
+          "type": "SSN",
+          "value": "900-97-5502"
+        },
+        "name": {
+          "last": "Marchetti",
+          "first": "Hassan",
+          "middle": "G"
+        },
+        "address": {
+          "street": "13 Maple Hollow Rd",
+          "city": "Arlington",
+          "stateOrProvince": "VA",
+          "zipOrPostal": "32428",
+          "country": "US"
+        },
+        "dateOfBirth": "1989-04-24",
+        "occupation": "Professor"
+      },
+      "jointFilers": [],
+      "financialAccounts": [
+        {
+          "accountNumber": "TEST-ACCT-0016-A",
+          "accountType": "SignatureAuthorityOnly",
+          "currency": "PLN",
+          "financialInstitution": {
+            "name": "Continental Union Bank",
+            "address": {
+              "city": "Warsaw",
+              "country": "PL"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 0,
+          "note": "Filer has signature authority only, no financial interest; account value not required"
+        }
+      ],
+      "signature": {
+        "signed": true,
+        "signatureDate": "2023-07-25",
+        "preparerUsed": false
+      },
+      "pdfDocument": {
+        "fileName": "FBAR_31000000000016.pdf",
+        "s3Bucket": "irs-cm-fbar-documents-dev",
+        "s3Key": "fbar-pdfs/2022/FBAR_31000000000016.pdf",
+        "contentType": "application/pdf",
+        "sizeBytes": 4165,
+        "sha256": "10b0d99d16ec6aaa1d04d0c9ba97bf3e0ac4544e8638371505a103bfd6f53947",
+        "generatedFrom": "synthetic_fbar_filings.json",
+        "note": "Specimen PDF rendered to mirror the FinCEN Form 114 field layout; not an official FinCEN document."
+      }
+    },
+    {
+      "bsaId": "31000000000017",
+      "submissionType": "Original",
+      "filingStatus": "Accepted",
+      "taxYear": 2023,
+      "dateFiled": "2024-07-19",
+      "priorReportBsaId": null,
+      "filer": {
+        "filerType": "Individual",
+        "usPersonCategory": "Resident Alien",
+        "tin": {
+          "type": "SSN",
+          "value": "900-18-6168"
+        },
+        "name": {
+          "last": "Reyes",
+          "first": "Freya",
+          "middle": "F"
+        },
+        "address": {
+          "street": "631 Willow Grove Ave",
+          "city": "Eugene",
+          "stateOrProvince": "OR",
+          "zipOrPostal": "80384",
+          "country": "US"
+        },
+        "dateOfBirth": "1978-08-21",
+        "occupation": "Nurse Practitioner"
+      },
+      "jointFilers": [],
+      "financialAccounts": [
+        {
+          "accountNumber": "TEST-ACCT-0017-A",
+          "accountType": "Securities",
+          "currency": "EUR",
+          "financialInstitution": {
+            "name": "Emerald Isle Trust",
+            "address": {
+              "city": "Dublin",
+              "country": "IE"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 38360.24
+        },
+        {
+          "accountNumber": "TEST-ACCT-0017-B",
+          "accountType": "Bank",
+          "currency": "GBP",
+          "financialInstitution": {
+            "name": "Highland Merchant Bank",
+            "address": {
+              "city": "Edinburgh",
+              "country": "GB"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 184821.36
+        },
+        {
+          "accountNumber": "TEST-ACCT-0017-C",
+          "accountType": "Securities",
+          "currency": "EUR",
+          "financialInstitution": {
+            "name": "Baltic Coast Savings Bank",
+            "address": {
+              "city": "Riga",
+              "country": "LV"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 249002.01
+        }
+      ],
+      "signature": {
+        "signed": true,
+        "signatureDate": "2024-07-19",
+        "preparerUsed": false
+      },
+      "pdfDocument": {
+        "fileName": "FBAR_31000000000017.pdf",
+        "s3Bucket": "irs-cm-fbar-documents-dev",
+        "s3Key": "fbar-pdfs/2023/FBAR_31000000000017.pdf",
+        "contentType": "application/pdf",
+        "sizeBytes": 4443,
+        "sha256": "6c1ce4ff6f7402da2268dfd6cf1ac1e03a0f59bb88747a0dec914de24d0a4758",
+        "generatedFrom": "synthetic_fbar_filings.json",
+        "note": "Specimen PDF rendered to mirror the FinCEN Form 114 field layout; not an official FinCEN document."
+      }
+    },
+    {
+      "bsaId": "31000000000018",
+      "submissionType": "Original",
+      "filingStatus": "Accepted",
+      "taxYear": 2023,
+      "dateFiled": "2024-09-19",
+      "priorReportBsaId": null,
+      "filer": {
+        "filerType": "Individual",
+        "usPersonCategory": "Citizen",
+        "tin": {
+          "type": "SSN",
+          "value": "900-54-2083"
+        },
+        "name": {
+          "last": "Haddad",
+          "first": "Miguel",
+          "middle": "J"
+        },
+        "address": {
+          "street": "219 Harbor View Ct",
+          "city": "Minneapolis",
+          "stateOrProvince": "MN",
+          "zipOrPostal": "77200",
+          "country": "US"
+        },
+        "dateOfBirth": "1982-02-18",
+        "occupation": "Investment Analyst"
+      },
+      "jointFilers": [
+        {
+          "tin": {
+            "type": "SSN",
+            "value": "900-93-9907"
+          },
+          "name": {
+            "last": "Haddad",
+            "first": "Isabela",
+            "middle": null
+          },
+          "relationship": "Spouse"
+        }
+      ],
+      "financialAccounts": [
+        {
+          "accountNumber": "TEST-ACCT-0018-A",
+          "accountType": "Bank",
+          "currency": "AED",
+          "financialInstitution": {
+            "name": "Red Sea Trading Bank",
+            "address": {
+              "city": "Dubai",
+              "country": "AE"
+            }
+          },
+          "jointOwnerCount": 1,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 43914.29
+        },
+        {
+          "accountNumber": "TEST-ACCT-0018-B",
+          "accountType": "Securities",
+          "currency": "CAD",
+          "financialInstitution": {
+            "name": "Northern Shore Credit Union",
+            "address": {
+              "city": "Halifax",
+              "country": "CA"
+            }
+          },
+          "jointOwnerCount": 1,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 252264.79
+        },
+        {
+          "accountNumber": "TEST-ACCT-0018-C",
+          "accountType": "Bank",
+          "currency": "EUR",
+          "financialInstitution": {
+            "name": "Credit Littoral",
+            "address": {
+              "city": "Nice",
+              "country": "FR"
+            }
+          },
+          "jointOwnerCount": 1,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 4509.47
+        }
+      ],
+      "signature": {
+        "signed": true,
+        "signatureDate": "2024-09-19",
+        "preparerUsed": true,
+        "preparerPtin": "P903401"
+      },
+      "pdfDocument": {
+        "fileName": "FBAR_31000000000018.pdf",
+        "s3Bucket": "irs-cm-fbar-documents-dev",
+        "s3Key": "fbar-pdfs/2023/FBAR_31000000000018.pdf",
+        "contentType": "application/pdf",
+        "sizeBytes": 5077,
+        "sha256": "050c0c310b5cf750b144b0f2e597afb934eb0d5a5eb4e3370db09a2980617f1a",
+        "generatedFrom": "synthetic_fbar_filings.json",
+        "note": "Specimen PDF rendered to mirror the FinCEN Form 114 field layout; not an official FinCEN document."
+      }
+    },
+    {
+      "bsaId": "31000000000019",
+      "submissionType": "Original",
+      "filingStatus": "Accepted",
+      "taxYear": 2023,
+      "dateFiled": "2024-07-27",
+      "priorReportBsaId": null,
+      "filer": {
+        "filerType": "Individual",
+        "usPersonCategory": "Resident Alien",
+        "tin": {
+          "type": "SSN",
+          "value": "900-72-3839"
+        },
+        "name": {
+          "last": "Nkemelu",
+          "first": "Sanne",
+          "middle": "N"
+        },
+        "address": {
+          "street": "934 Riverside Ct",
+          "city": "Pittsburgh",
+          "stateOrProvince": "PA",
+          "zipOrPostal": "13325",
+          "country": "US"
+        },
+        "dateOfBirth": "1987-08-12",
+        "occupation": "Architect"
+      },
+      "jointFilers": [
+        {
+          "tin": {
+            "type": "SSN",
+            "value": "900-30-7160"
+          },
+          "name": {
+            "last": "Nkemelu",
+            "first": "Kwame",
+            "middle": null
+          },
+          "relationship": "Spouse"
+        }
+      ],
+      "financialAccounts": [
+        {
+          "accountNumber": "TEST-ACCT-0019-A",
+          "accountType": "Bank",
+          "currency": "PEN",
+          "financialInstitution": {
+            "name": "Andean Cooperative Bank",
+            "address": {
+              "city": "Lima",
+              "country": "PE"
+            }
+          },
+          "jointOwnerCount": 1,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 48112.84
+        },
+        {
+          "accountNumber": "TEST-ACCT-0019-B",
+          "accountType": "Other",
+          "currency": "NZD",
+          "financialInstitution": {
+            "name": "Vantage Antipodes Bank",
+            "address": {
+              "city": "Auckland",
+              "country": "NZ"
+            }
+          },
+          "jointOwnerCount": 1,
+          "accountClosedDuringYear": false,
+          "accountTypeOtherDescription": "Life insurance cash value account",
+          "maxAccountValueUSD": 70690.07
+        }
+      ],
+      "signature": {
+        "signed": true,
+        "signatureDate": "2024-07-27",
+        "preparerUsed": false
+      },
+      "pdfDocument": {
+        "fileName": "FBAR_31000000000019.pdf",
+        "s3Bucket": "irs-cm-fbar-documents-dev",
+        "s3Key": "fbar-pdfs/2023/FBAR_31000000000019.pdf",
+        "contentType": "application/pdf",
+        "sizeBytes": 4898,
+        "sha256": "8baddb5c74f285b7e4041e8906ea53cf9c5646a265a0593f7752de4a47b2cbcf",
+        "generatedFrom": "synthetic_fbar_filings.json",
+        "note": "Specimen PDF rendered to mirror the FinCEN Form 114 field layout; not an official FinCEN document."
+      }
+    },
+    {
+      "bsaId": "31000000000020",
+      "submissionType": "Original",
+      "filingStatus": "Accepted",
+      "taxYear": 2022,
+      "dateFiled": "2023-06-22",
+      "priorReportBsaId": null,
+      "filer": {
+        "filerType": "Individual",
+        "usPersonCategory": "Citizen",
+        "tin": {
+          "type": "SSN",
+          "value": "900-99-4617"
+        },
+        "name": {
+          "last": "Duarte",
+          "first": "Amara",
+          "middle": null
+        },
+        "address": {
+          "street": "703 Sunset Ave",
+          "city": "Springdale",
+          "stateOrProvince": "OH",
+          "zipOrPostal": "55508",
+          "country": "US"
+        },
+        "dateOfBirth": "1996-02-15",
+        "occupation": "Journalist"
+      },
+      "jointFilers": [],
+      "financialAccounts": [
+        {
+          "accountNumber": "TEST-ACCT-0020-A",
+          "accountType": "Securities",
+          "currency": "USD",
+          "financialInstitution": {
+            "name": "Caribe International Bank",
+            "address": {
+              "city": "George Town",
+              "country": "KY"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 22887.66
+        }
+      ],
+      "signature": {
+        "signed": true,
+        "signatureDate": "2023-06-22",
+        "preparerUsed": false
+      },
+      "pdfDocument": {
+        "fileName": "FBAR_31000000000020.pdf",
+        "s3Bucket": "irs-cm-fbar-documents-dev",
+        "s3Key": "fbar-pdfs/2022/FBAR_31000000000020.pdf",
+        "contentType": "application/pdf",
+        "sizeBytes": 4243,
+        "sha256": "e67e4e286a20f2b25133ff51f10d1d34aeafaf465566bb536999f7637463345d",
+        "generatedFrom": "synthetic_fbar_filings.json",
+        "note": "Specimen PDF rendered to mirror the FinCEN Form 114 field layout; not an official FinCEN document."
+      }
+    },
+    {
+      "bsaId": "31000000000021",
+      "submissionType": "Original",
+      "filingStatus": "Accepted",
+      "taxYear": 2022,
+      "dateFiled": "2023-07-06",
+      "priorReportBsaId": null,
+      "filer": {
+        "filerType": "Individual",
+        "usPersonCategory": "Resident Alien",
+        "tin": {
+          "type": "SSN",
+          "value": "900-33-3517"
+        },
+        "name": {
+          "last": "Barbosa",
+          "first": "Lukas",
+          "middle": "B"
+        },
+        "address": {
+          "street": "995 Maple Hollow Ct",
+          "city": "Plano",
+          "stateOrProvince": "TX",
+          "zipOrPostal": "98617",
+          "country": "US"
+        },
+        "dateOfBirth": "1986-11-28",
+        "occupation": "Professor"
+      },
+      "jointFilers": [],
+      "financialAccounts": [
+        {
+          "accountNumber": "TEST-ACCT-0021-A",
+          "accountType": "Bank",
+          "currency": "NZD",
+          "financialInstitution": {
+            "name": "Vantage Antipodes Bank",
+            "address": {
+              "city": "Auckland",
+              "country": "NZ"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": true,
+          "maxAccountValueUSD": 105329.24
+        }
+      ],
+      "signature": {
+        "signed": true,
+        "signatureDate": "2023-07-06",
+        "preparerUsed": false
+      },
+      "pdfDocument": {
+        "fileName": "FBAR_31000000000021.pdf",
+        "s3Bucket": "irs-cm-fbar-documents-dev",
+        "s3Key": "fbar-pdfs/2022/FBAR_31000000000021.pdf",
+        "contentType": "application/pdf",
+        "sizeBytes": 4246,
+        "sha256": "71c92d912b8529e1843603f4a4888869dc009236d6163c73f8bbb53ec44ffaaa",
+        "generatedFrom": "synthetic_fbar_filings.json",
+        "note": "Specimen PDF rendered to mirror the FinCEN Form 114 field layout; not an official FinCEN document."
+      }
+    },
+    {
+      "bsaId": "31000000000022",
+      "submissionType": "Original",
+      "filingStatus": "Accepted",
+      "taxYear": 2024,
+      "dateFiled": "2025-08-13",
+      "priorReportBsaId": null,
+      "filer": {
+        "filerType": "Individual",
+        "usPersonCategory": "Citizen",
+        "tin": {
+          "type": "SSN",
+          "value": "900-64-4414"
+        },
+        "name": {
+          "last": "Zieli\u0144ski",
+          "first": "Yuki",
+          "middle": "N"
+        },
+        "address": {
+          "street": "993 Lakeshore Ct",
+          "city": "Bellevue",
+          "stateOrProvince": "WA",
+          "zipOrPostal": "36345",
+          "country": "US"
+        },
+        "dateOfBirth": "1982-05-04",
+        "occupation": "Import/Export Trader"
+      },
+      "jointFilers": [],
+      "financialAccounts": [
+        {
+          "accountNumber": "TEST-ACCT-0022-A",
+          "accountType": "Bank",
+          "currency": "CHF",
+          "financialInstitution": {
+            "name": "Alpine Privatbank",
+            "address": {
+              "city": "Zurich",
+              "country": "CH"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 31882.46
+        },
+        {
+          "accountNumber": "TEST-ACCT-0022-B",
+          "accountType": "Bank",
+          "currency": "EUR",
+          "financialInstitution": {
+            "name": "Baltic Coast Savings Bank",
+            "address": {
+              "city": "Riga",
+              "country": "LV"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 27639.24
+        },
+        {
+          "accountNumber": "TEST-ACCT-0022-C",
+          "accountType": "Securities",
+          "currency": "USD",
+          "financialInstitution": {
+            "name": "Caribe International Bank",
+            "address": {
+              "city": "George Town",
+              "country": "KY"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 25920.72
+        }
+      ],
+      "signature": {
+        "signed": true,
+        "signatureDate": "2025-08-13",
+        "preparerUsed": false
+      },
+      "pdfDocument": {
+        "fileName": "FBAR_31000000000022.pdf",
+        "s3Bucket": "irs-cm-fbar-documents-dev",
+        "s3Key": "fbar-pdfs/2024/FBAR_31000000000022.pdf",
+        "contentType": "application/pdf",
+        "sizeBytes": 4568,
+        "sha256": "b8668e03c0800f2321aad5e3211b3ab4b6f837032728e8922ca2e9a9fe018817",
+        "generatedFrom": "synthetic_fbar_filings.json",
+        "note": "Specimen PDF rendered to mirror the FinCEN Form 114 field layout; not an official FinCEN document."
+      }
+    },
+    {
+      "bsaId": "31000000000023",
+      "submissionType": "Original",
+      "filingStatus": "Accepted",
+      "taxYear": 2024,
+      "dateFiled": "2025-03-10",
+      "priorReportBsaId": null,
+      "filer": {
+        "filerType": "Individual",
+        "usPersonCategory": "Resident Alien",
+        "tin": {
+          "type": "SSN",
+          "value": "900-85-5372"
+        },
+        "name": {
+          "last": "Okafor",
+          "first": "Isabela",
+          "middle": null
+        },
+        "address": {
+          "street": "720 Riverside Cir",
+          "city": "Chicago",
+          "stateOrProvince": "IL",
+          "zipOrPostal": "91826",
+          "country": "US"
+        },
+        "dateOfBirth": "1990-12-06",
+        "occupation": "Accountant"
+      },
+      "jointFilers": [],
+      "financialAccounts": [
+        {
+          "accountNumber": "TEST-ACCT-0023-A",
+          "accountType": "Bank",
+          "currency": "CAD",
+          "financialInstitution": {
+            "name": "Northern Shore Credit Union",
+            "address": {
+              "city": "Halifax",
+              "country": "CA"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 15526.27
+        }
+      ],
+      "signature": {
+        "signed": true,
+        "signatureDate": "2025-03-10",
+        "preparerUsed": false
+      },
+      "pdfDocument": {
+        "fileName": "FBAR_31000000000023.pdf",
+        "s3Bucket": "irs-cm-fbar-documents-dev",
+        "s3Key": "fbar-pdfs/2024/FBAR_31000000000023.pdf",
+        "contentType": "application/pdf",
+        "sizeBytes": 4242,
+        "sha256": "3e19df3bb0dea343eb962bdc9ee99b643c40f857ed71eba09fe63ce8e05736e3",
+        "generatedFrom": "synthetic_fbar_filings.json",
+        "note": "Specimen PDF rendered to mirror the FinCEN Form 114 field layout; not an official FinCEN document."
+      }
+    },
+    {
+      "bsaId": "31000000000024",
+      "submissionType": "Original",
+      "filingStatus": "Accepted",
+      "taxYear": 2023,
+      "dateFiled": "2024-05-16",
+      "priorReportBsaId": null,
+      "filer": {
+        "filerType": "Individual",
+        "usPersonCategory": "Resident Alien",
+        "tin": {
+          "type": "SSN",
+          "value": "900-50-1744"
+        },
+        "name": {
+          "last": "Andersson",
+          "first": "Kwame",
+          "middle": "T"
+        },
+        "address": {
+          "street": "104 Harbor View Rd",
+          "city": "New Orleans",
+          "stateOrProvince": "LA",
+          "zipOrPostal": "90727",
+          "country": "US"
+        },
+        "dateOfBirth": "1972-04-22",
+        "occupation": "Physician"
+      },
+      "jointFilers": [
+        {
+          "tin": {
+            "type": "SSN",
+            "value": "900-11-8664"
+          },
+          "name": {
+            "last": "Andersson",
+            "first": "Naledi",
+            "middle": null
+          },
+          "relationship": "Spouse"
+        }
+      ],
+      "financialAccounts": [
+        {
+          "accountNumber": "TEST-ACCT-0024-A",
+          "accountType": "Bank",
+          "currency": "EUR",
+          "financialInstitution": {
+            "name": "Danube Universal Bank",
+            "address": {
+              "city": "Vienna",
+              "country": "AT"
+            }
+          },
+          "jointOwnerCount": 1,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 452023.54
+        },
+        {
+          "accountNumber": "TEST-ACCT-0024-B",
+          "accountType": "Securities",
+          "currency": "AED",
+          "financialInstitution": {
+            "name": "Red Sea Trading Bank",
+            "address": {
+              "city": "Dubai",
+              "country": "AE"
+            }
+          },
+          "jointOwnerCount": 1,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 22800.64
+        },
+        {
+          "accountNumber": "TEST-ACCT-0024-C",
+          "accountType": "Securities",
+          "currency": "CHF",
+          "financialInstitution": {
+            "name": "Alpine Privatbank",
+            "address": {
+              "city": "Zurich",
+              "country": "CH"
+            }
+          },
+          "jointOwnerCount": 1,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 284970.74
+        }
+      ],
+      "signature": {
+        "signed": true,
+        "signatureDate": "2024-05-16",
+        "preparerUsed": true,
+        "preparerPtin": "P903605"
+      },
+      "pdfDocument": {
+        "fileName": "FBAR_31000000000024.pdf",
+        "s3Bucket": "irs-cm-fbar-documents-dev",
+        "s3Key": "fbar-pdfs/2023/FBAR_31000000000024.pdf",
+        "contentType": "application/pdf",
+        "sizeBytes": 5067,
+        "sha256": "49c2f78f6ead34e2c83d1793d41355a5618d33af8cd3c10595e18d21c230ce32",
+        "generatedFrom": "synthetic_fbar_filings.json",
+        "note": "Specimen PDF rendered to mirror the FinCEN Form 114 field layout; not an official FinCEN document."
+      }
+    },
+    {
+      "bsaId": "31000000000025",
+      "submissionType": "Original",
+      "filingStatus": "Accepted",
+      "taxYear": 2024,
+      "dateFiled": "2025-03-06",
+      "priorReportBsaId": null,
+      "filer": {
+        "filerType": "Individual",
+        "usPersonCategory": "Citizen",
+        "tin": {
+          "type": "SSN",
+          "value": "900-52-7965"
+        },
+        "name": {
+          "last": "Novak",
+          "first": "Ingrid",
+          "middle": "K"
+        },
+        "address": {
+          "street": "829 Fieldstone St",
+          "city": "New York",
+          "stateOrProvince": "NY",
+          "zipOrPostal": "47073",
+          "country": "US"
+        },
+        "dateOfBirth": "1999-11-05",
+        "occupation": "Consultant"
+      },
+      "jointFilers": [],
+      "financialAccounts": [
+        {
+          "accountNumber": "TEST-ACCT-0025-A",
+          "accountType": "Other",
+          "currency": "CAD",
+          "financialInstitution": {
+            "name": "Northern Shore Credit Union",
+            "address": {
+              "city": "Halifax",
+              "country": "CA"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "accountTypeOtherDescription": "Mutual fund omnibus account",
+          "maxAccountValueUSD": 235383.85
+        },
+        {
+          "accountNumber": "TEST-ACCT-0025-B",
+          "accountType": "Bank",
+          "currency": "GBP",
+          "financialInstitution": {
+            "name": "Kensington Fiduciary Trust Ltd",
+            "address": {
+              "city": "London",
+              "country": "GB"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 45770.05
+        }
+      ],
+      "signature": {
+        "signed": true,
+        "signatureDate": "2025-03-06",
+        "preparerUsed": true,
+        "preparerPtin": "P904101"
+      },
+      "pdfDocument": {
+        "fileName": "FBAR_31000000000025.pdf",
+        "s3Bucket": "irs-cm-fbar-documents-dev",
+        "s3Key": "fbar-pdfs/2024/FBAR_31000000000025.pdf",
+        "contentType": "application/pdf",
+        "sizeBytes": 4403,
+        "sha256": "358244311229dbcc5976b8331369bd73745aab73fc426ba553e5eed0fc606346",
+        "generatedFrom": "synthetic_fbar_filings.json",
+        "note": "Specimen PDF rendered to mirror the FinCEN Form 114 field layout; not an official FinCEN document."
+      }
+    },
+    {
+      "bsaId": "31000000000026",
+      "submissionType": "Original",
+      "filingStatus": "Accepted",
+      "taxYear": 2023,
+      "dateFiled": "2024-05-02",
+      "priorReportBsaId": null,
+      "filer": {
+        "filerType": "Individual",
+        "usPersonCategory": "Citizen",
+        "tin": {
+          "type": "SSN",
+          "value": "900-60-5641"
+        },
+        "name": {
+          "last": "Osei",
+          "first": "Farid",
+          "middle": null
+        },
+        "address": {
+          "street": "351 Maple Hollow Ln",
+          "city": "Portland",
+          "stateOrProvince": "ME",
+          "zipOrPostal": "11984",
+          "country": "US"
+        },
+        "dateOfBirth": "1974-01-26",
+        "occupation": "Airline Pilot"
+      },
+      "jointFilers": [],
+      "financialAccounts": [
+        {
+          "accountNumber": "TEST-ACCT-0026-A",
+          "accountType": "SignatureAuthorityOnly",
+          "currency": "PLN",
+          "financialInstitution": {
+            "name": "Continental Union Bank",
+            "address": {
+              "city": "Warsaw",
+              "country": "PL"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 0,
+          "note": "Filer has signature authority only, no financial interest; account value not required"
+        }
+      ],
+      "signature": {
+        "signed": true,
+        "signatureDate": "2024-05-02",
+        "preparerUsed": true,
+        "preparerPtin": "P905534"
+      },
+      "pdfDocument": {
+        "fileName": "FBAR_31000000000026.pdf",
+        "s3Bucket": "irs-cm-fbar-documents-dev",
+        "s3Key": "fbar-pdfs/2023/FBAR_31000000000026.pdf",
+        "contentType": "application/pdf",
+        "sizeBytes": 4188,
+        "sha256": "28c9552d2bb18d9d509d841dce0857060a3adf0c1fa74c73516f0bd2b306167e",
+        "generatedFrom": "synthetic_fbar_filings.json",
+        "note": "Specimen PDF rendered to mirror the FinCEN Form 114 field layout; not an official FinCEN document."
+      }
+    },
+    {
+      "bsaId": "31000000000027",
+      "submissionType": "Original",
+      "filingStatus": "Accepted",
+      "taxYear": 2022,
+      "dateFiled": "2023-03-03",
+      "priorReportBsaId": null,
+      "filer": {
+        "filerType": "Individual",
+        "usPersonCategory": "Citizen",
+        "tin": {
+          "type": "SSN",
+          "value": "900-36-1548"
+        },
+        "name": {
+          "last": "Villanueva",
+          "first": "Bianca",
+          "middle": "E"
+        },
+        "address": {
+          "street": "655 Fieldstone Ct",
+          "city": "Wilmington",
+          "stateOrProvince": "DE",
+          "zipOrPostal": "37606",
+          "country": "US"
+        },
+        "dateOfBirth": "2000-02-15",
+        "occupation": "Consultant"
+      },
+      "jointFilers": [],
+      "financialAccounts": [
+        {
+          "accountNumber": "TEST-ACCT-0027-A",
+          "accountType": "Securities",
+          "currency": "JPY",
+          "financialInstitution": {
+            "name": "Sakura Pacific Bank",
+            "address": {
+              "city": "Osaka",
+              "country": "JP"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 21983.8
+        },
+        {
+          "accountNumber": "TEST-ACCT-0027-B",
+          "accountType": "Other",
+          "currency": "EUR",
+          "financialInstitution": {
+            "name": "Baltic Coast Savings Bank",
+            "address": {
+              "city": "Riga",
+              "country": "LV"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "accountTypeOtherDescription": "Precious metals custody account",
+          "maxAccountValueUSD": 53337.45
+        }
+      ],
+      "signature": {
+        "signed": true,
+        "signatureDate": "2023-03-03",
+        "preparerUsed": false
+      },
+      "pdfDocument": {
+        "fileName": "FBAR_31000000000027.pdf",
+        "s3Bucket": "irs-cm-fbar-documents-dev",
+        "s3Key": "fbar-pdfs/2022/FBAR_31000000000027.pdf",
+        "contentType": "application/pdf",
+        "sizeBytes": 4369,
+        "sha256": "63388f539ed3327b2cc7dd2b23863aecb3a1f111b73619eb921646bf5fb3a345",
+        "generatedFrom": "synthetic_fbar_filings.json",
+        "note": "Specimen PDF rendered to mirror the FinCEN Form 114 field layout; not an official FinCEN document."
+      }
+    },
+    {
+      "bsaId": "31000000000028",
+      "submissionType": "Original",
+      "filingStatus": "Accepted",
+      "taxYear": 2024,
+      "dateFiled": "2025-02-07",
+      "priorReportBsaId": null,
+      "filer": {
+        "filerType": "Individual",
+        "usPersonCategory": "Resident Alien",
+        "tin": {
+          "type": "SSN",
+          "value": "900-83-9728"
+        },
+        "name": {
+          "last": "Dubois",
+          "first": "Aleksander",
+          "middle": "L"
+        },
+        "address": {
+          "street": "437 Fieldstone Ln",
+          "city": "San Jose",
+          "stateOrProvince": "CA",
+          "zipOrPostal": "29959",
+          "country": "US"
+        },
+        "dateOfBirth": "1961-09-04",
+        "occupation": "Physician"
+      },
+      "jointFilers": [
+        {
+          "tin": {
+            "type": "SSN",
+            "value": "900-50-5648"
+          },
+          "name": {
+            "last": "Dubois",
+            "first": "Diego",
+            "middle": null
+          },
+          "relationship": "Spouse"
+        }
+      ],
+      "financialAccounts": [
+        {
+          "accountNumber": "TEST-ACCT-0028-A",
+          "accountType": "Bank",
+          "currency": "AED",
+          "financialInstitution": {
+            "name": "Red Sea Trading Bank",
+            "address": {
+              "city": "Dubai",
+              "country": "AE"
+            }
+          },
+          "jointOwnerCount": 1,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 2299763.13
+        }
+      ],
+      "signature": {
+        "signed": true,
+        "signatureDate": "2025-02-07",
+        "preparerUsed": true,
+        "preparerPtin": "P904119"
+      },
+      "pdfDocument": {
+        "fileName": "FBAR_31000000000028.pdf",
+        "s3Bucket": "irs-cm-fbar-documents-dev",
+        "s3Key": "fbar-pdfs/2024/FBAR_31000000000028.pdf",
+        "contentType": "application/pdf",
+        "sizeBytes": 4362,
+        "sha256": "75e8a5f3cd13dfc70f1dfeab4606a47fbd11b5c5cd8feee29b211cc541ea5dbd",
+        "generatedFrom": "synthetic_fbar_filings.json",
+        "note": "Specimen PDF rendered to mirror the FinCEN Form 114 field layout; not an official FinCEN document."
+      }
+    },
+    {
+      "bsaId": "31000000000029",
+      "submissionType": "Original",
+      "filingStatus": "Accepted",
+      "taxYear": 2023,
+      "dateFiled": "2024-09-07",
+      "priorReportBsaId": null,
+      "filer": {
+        "filerType": "Entity",
+        "usPersonCategory": "Domestic Entity",
+        "tin": {
+          "type": "EIN",
+          "value": "98-8910903"
+        },
+        "name": {
+          "entityName": "Bluewater Overseas Capital Partners LLC"
+        },
+        "address": {
+          "street": "978 Corporate Pkwy Ste 178",
+          "city": "Wilmington",
+          "stateOrProvince": "DE",
+          "zipOrPostal": "40256",
+          "country": "US"
+        },
+        "entityType": "Corporation"
+      },
+      "jointFilers": [],
+      "financialAccounts": [
+        {
+          "accountNumber": "TEST-ACCT-0029-A",
+          "accountType": "SignatureAuthorityOnly",
+          "currency": "AED",
+          "financialInstitution": {
+            "name": "Red Sea Trading Bank",
+            "address": {
+              "city": "Dubai",
+              "country": "AE"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 0,
+          "note": "Filer has signature authority only, no financial interest; account value not required"
+        },
+        {
+          "accountNumber": "TEST-ACCT-0029-B",
+          "accountType": "Bank",
+          "currency": "EUR",
+          "financialInstitution": {
+            "name": "Credit Littoral",
+            "address": {
+              "city": "Nice",
+              "country": "FR"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 7838.22
+        }
+      ],
+      "signature": {
+        "signed": true,
+        "signatureDate": "2024-09-07",
+        "preparerUsed": true,
+        "preparerPtin": "P906831"
+      },
+      "pdfDocument": {
+        "fileName": "FBAR_31000000000029.pdf",
+        "s3Bucket": "irs-cm-fbar-documents-dev",
+        "s3Key": "fbar-pdfs/2023/FBAR_31000000000029.pdf",
+        "contentType": "application/pdf",
+        "sizeBytes": 5316,
+        "sha256": "11881f2f17acd5d6a6c9f3a6010b0f2fddbea0c6e63fbbe6f685d5350aec017d",
+        "generatedFrom": "synthetic_fbar_filings.json",
+        "note": "Specimen PDF rendered to mirror the FinCEN Form 114 field layout; not an official FinCEN document."
+      }
+    },
+    {
+      "bsaId": "31000000000030",
+      "submissionType": "Original",
+      "filingStatus": "Accepted",
+      "taxYear": 2023,
+      "dateFiled": "2024-08-26",
+      "priorReportBsaId": null,
+      "filer": {
+        "filerType": "Entity",
+        "usPersonCategory": "Domestic Entity",
+        "tin": {
+          "type": "EIN",
+          "value": "98-5422311"
+        },
+        "name": {
+          "entityName": "Ironwood Harborline Global Trust LLC"
+        },
+        "address": {
+          "street": "394 Corporate Pkwy Ste 355",
+          "city": "Atlanta",
+          "stateOrProvince": "GA",
+          "zipOrPostal": "79954",
+          "country": "US"
+        },
+        "entityType": "LLC"
+      },
+      "jointFilers": [],
+      "financialAccounts": [
+        {
+          "accountNumber": "TEST-ACCT-0030-A",
+          "accountType": "Bank",
+          "currency": "USD",
+          "financialInstitution": {
+            "name": "Caribe International Bank",
+            "address": {
+              "city": "George Town",
+              "country": "KY"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 2754.78
+        }
+      ],
+      "signature": {
+        "signed": true,
+        "signatureDate": "2024-08-26",
+        "preparerUsed": true,
+        "preparerPtin": "P902186"
+      },
+      "pdfDocument": {
+        "fileName": "FBAR_31000000000030.pdf",
+        "s3Bucket": "irs-cm-fbar-documents-dev",
+        "s3Key": "fbar-pdfs/2023/FBAR_31000000000030.pdf",
+        "contentType": "application/pdf",
+        "sizeBytes": 4169,
+        "sha256": "75b5dfe6f4505b7b7e9a4518983dcff96a8d62a4dbf98e0ecdbbb7a9ee1a4bd8",
+        "generatedFrom": "synthetic_fbar_filings.json",
+        "note": "Specimen PDF rendered to mirror the FinCEN Form 114 field layout; not an official FinCEN document."
+      }
+    },
+    {
+      "bsaId": "31000000000031",
+      "submissionType": "Original",
+      "filingStatus": "Accepted",
+      "taxYear": 2024,
+      "dateFiled": "2025-10-20",
+      "priorReportBsaId": null,
+      "filer": {
+        "filerType": "Entity",
+        "usPersonCategory": "Domestic Entity",
+        "tin": {
+          "type": "EIN",
+          "value": "98-6069933"
+        },
+        "name": {
+          "entityName": "Ironwood Bluewater Holdings LLC"
+        },
+        "address": {
+          "street": "1149 Corporate Pkwy Ste 423",
+          "city": "Denver",
+          "stateOrProvince": "CO",
+          "zipOrPostal": "11030",
+          "country": "US"
+        },
+        "entityType": "Trust"
+      },
+      "jointFilers": [],
+      "financialAccounts": [
+        {
+          "accountNumber": "TEST-ACCT-0031-A",
+          "accountType": "Securities",
+          "currency": "AED",
+          "financialInstitution": {
+            "name": "Red Sea Trading Bank",
+            "address": {
+              "city": "Dubai",
+              "country": "AE"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 39932.92
+        }
+      ],
+      "signature": {
+        "signed": true,
+        "signatureDate": "2025-10-20",
+        "preparerUsed": true,
+        "preparerPtin": "P905666"
+      },
+      "pdfDocument": {
+        "fileName": "FBAR_31000000000031.pdf",
+        "s3Bucket": "irs-cm-fbar-documents-dev",
+        "s3Key": "fbar-pdfs/2024/FBAR_31000000000031.pdf",
+        "contentType": "application/pdf",
+        "sizeBytes": 4169,
+        "sha256": "82e5452d4de6815b2814b6de7d076e5a84c0f3239e2bc6e3784882d20a02866d",
+        "generatedFrom": "synthetic_fbar_filings.json",
+        "note": "Specimen PDF rendered to mirror the FinCEN Form 114 field layout; not an official FinCEN document."
+      }
+    },
+    {
+      "bsaId": "31000000000032",
+      "submissionType": "Original",
+      "filingStatus": "Accepted",
+      "taxYear": 2024,
+      "dateFiled": "2025-08-08",
+      "priorReportBsaId": null,
+      "filer": {
+        "filerType": "Entity",
+        "usPersonCategory": "Domestic Entity",
+        "tin": {
+          "type": "EIN",
+          "value": "98-6342796"
+        },
+        "name": {
+          "entityName": "Bluewater Northfield Ventures Inc"
+        },
+        "address": {
+          "street": "1578 Corporate Pkwy Ste 447",
+          "city": "Arlington",
+          "stateOrProvince": "VA",
+          "zipOrPostal": "48949",
+          "country": "US"
+        },
+        "entityType": "Trust"
+      },
+      "jointFilers": [],
+      "financialAccounts": [
+        {
+          "accountNumber": "TEST-ACCT-0032-A",
+          "accountType": "Bank",
+          "currency": "CHF",
+          "financialInstitution": {
+            "name": "Alpine Privatbank",
+            "address": {
+              "city": "Zurich",
+              "country": "CH"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 9016246.74
+        }
+      ],
+      "signature": {
+        "signed": true,
+        "signatureDate": "2025-08-08",
+        "preparerUsed": true,
+        "preparerPtin": "P909220"
+      },
+      "pdfDocument": {
+        "fileName": "FBAR_31000000000032.pdf",
+        "s3Bucket": "irs-cm-fbar-documents-dev",
+        "s3Key": "fbar-pdfs/2024/FBAR_31000000000032.pdf",
+        "contentType": "application/pdf",
+        "sizeBytes": 4168,
+        "sha256": "58f41a138e14d2ce95ecf79797843cd241998865a707a64a1e2f1b6b22a9fb30",
+        "generatedFrom": "synthetic_fbar_filings.json",
+        "note": "Specimen PDF rendered to mirror the FinCEN Form 114 field layout; not an official FinCEN document."
+      }
+    },
+    {
+      "bsaId": "31000000000033",
+      "submissionType": "Original",
+      "filingStatus": "Accepted",
+      "taxYear": 2023,
+      "dateFiled": "2024-09-16",
+      "priorReportBsaId": null,
+      "filer": {
+        "filerType": "Entity",
+        "usPersonCategory": "Domestic Entity",
+        "tin": {
+          "type": "EIN",
+          "value": "98-9874654"
+        },
+        "name": {
+          "entityName": "Pinnacle Silverline Global Trust LLC"
+        },
+        "address": {
+          "street": "817 Corporate Pkwy Ste 472",
+          "city": "Pittsburgh",
+          "stateOrProvince": "PA",
+          "zipOrPostal": "57000",
+          "country": "US"
+        },
+        "entityType": "LLC"
+      },
+      "jointFilers": [],
+      "financialAccounts": [
+        {
+          "accountNumber": "TEST-ACCT-0033-A",
+          "accountType": "Other",
+          "currency": "NZD",
+          "financialInstitution": {
+            "name": "Vantage Antipodes Bank",
+            "address": {
+              "city": "Auckland",
+              "country": "NZ"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "accountTypeOtherDescription": "Mutual fund omnibus account",
+          "maxAccountValueUSD": 140413.08
+        },
+        {
+          "accountNumber": "TEST-ACCT-0033-B",
+          "accountType": "Bank",
+          "currency": "GBP",
+          "financialInstitution": {
+            "name": "Kensington Fiduciary Trust Ltd",
+            "address": {
+              "city": "London",
+              "country": "GB"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 112354.97
+        }
+      ],
+      "signature": {
+        "signed": true,
+        "signatureDate": "2024-09-16",
+        "preparerUsed": true,
+        "preparerPtin": "P904353"
+      },
+      "pdfDocument": {
+        "fileName": "FBAR_31000000000033.pdf",
+        "s3Bucket": "irs-cm-fbar-documents-dev",
+        "s3Key": "fbar-pdfs/2023/FBAR_31000000000033.pdf",
+        "contentType": "application/pdf",
+        "sizeBytes": 4323,
+        "sha256": "920d485633fbaf14b5109684890cc7bf7147dac2a58dcc1ba1d96f573ad2f7d8",
+        "generatedFrom": "synthetic_fbar_filings.json",
+        "note": "Specimen PDF rendered to mirror the FinCEN Form 114 field layout; not an official FinCEN document."
+      }
+    },
+    {
+      "bsaId": "31000000000034",
+      "submissionType": "Original",
+      "filingStatus": "Rejected",
+      "taxYear": 2024,
+      "dateFiled": "2025-02-22",
+      "priorReportBsaId": null,
+      "filer": {
+        "filerType": "Individual",
+        "usPersonCategory": "Citizen",
+        "tin": {
+          "type": "SSN",
+          "value": "900-20-2893"
+        },
+        "name": {
+          "last": "Obi",
+          "first": "Anke",
+          "middle": null
+        },
+        "address": {
+          "street": "481 Cedar Ridge Rd",
+          "city": "Charlotte",
+          "stateOrProvince": "NC",
+          "zipOrPostal": "15004",
+          "country": "US"
+        },
+        "dateOfBirth": "1955-02-03",
+        "occupation": "Physician"
+      },
+      "jointFilers": [],
+      "financialAccounts": [
+        {
+          "accountNumber": "TEST-ACCT-0034-A",
+          "accountType": "Bank",
+          "currency": "USD",
+          "financialInstitution": {
+            "name": "Caribe International Bank",
+            "address": {
+              "city": "George Town",
+              "country": "KY"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 35322.94
+        }
+      ],
+      "signature": {
+        "signed": true,
+        "signatureDate": "2025-02-22",
+        "preparerUsed": false
+      },
+      "rejectReason": "TIN validation failure - filer TIN does not match e-authentication record",
+      "pdfDocument": {
+        "fileName": "FBAR_31000000000034.pdf",
+        "s3Bucket": "irs-cm-fbar-documents-dev",
+        "s3Key": "fbar-pdfs/2024/FBAR_31000000000034.pdf",
+        "contentType": "application/pdf",
+        "sizeBytes": 4350,
+        "sha256": "aebe470aeca7fdf9d27a39d016211fbc5b767e1fbf66563823b0d151c826948a",
+        "generatedFrom": "synthetic_fbar_filings.json",
+        "note": "Specimen PDF rendered to mirror the FinCEN Form 114 field layout; not an official FinCEN document."
+      }
+    },
+    {
+      "bsaId": "31000000000035",
+      "submissionType": "Original",
+      "filingStatus": "Rejected",
+      "taxYear": 2024,
+      "dateFiled": "2025-05-16",
+      "priorReportBsaId": null,
+      "filer": {
+        "filerType": "Individual",
+        "usPersonCategory": "Citizen",
+        "tin": {
+          "type": "SSN",
+          "value": "900-44-4439"
+        },
+        "name": {
+          "last": "Delacroix",
+          "first": "Tariq",
+          "middle": "P"
+        },
+        "address": {
+          "street": "140 Sunset Rd",
+          "city": "Detroit",
+          "stateOrProvince": "MI",
+          "zipOrPostal": "63256",
+          "country": "US"
+        },
+        "dateOfBirth": "1957-07-22",
+        "occupation": "Software Engineer"
+      },
+      "jointFilers": [],
+      "financialAccounts": [
+        {
+          "accountNumber": "TEST-ACCT-0035-A",
+          "accountType": "Bank",
+          "currency": "EUR",
+          "financialInstitution": {
+            "name": "Meridiano Banco Privado",
+            "address": {
+              "city": "Lisbon",
+              "country": "PT"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 31981.04
+        }
+      ],
+      "signature": {
+        "signed": true,
+        "signatureDate": "2025-05-16",
+        "preparerUsed": false
+      },
+      "rejectReason": "Missing required signature",
+      "pdfDocument": {
+        "fileName": "FBAR_31000000000035.pdf",
+        "s3Bucket": "irs-cm-fbar-documents-dev",
+        "s3Key": "fbar-pdfs/2024/FBAR_31000000000035.pdf",
+        "contentType": "application/pdf",
+        "sizeBytes": 4329,
+        "sha256": "ae953d1a65f9edf1e249265e2d648adaa1bbc4b3f6293debe48324d68a454f5d",
+        "generatedFrom": "synthetic_fbar_filings.json",
+        "note": "Specimen PDF rendered to mirror the FinCEN Form 114 field layout; not an official FinCEN document."
+      }
+    },
+    {
+      "bsaId": "31000000000036",
+      "submissionType": "Original",
+      "filingStatus": "Rejected",
+      "taxYear": 2024,
+      "dateFiled": "2025-10-04",
+      "priorReportBsaId": null,
+      "filer": {
+        "filerType": "Individual",
+        "usPersonCategory": "Citizen",
+        "tin": {
+          "type": "SSN",
+          "value": "900-14-9951"
+        },
+        "name": {
+          "last": "Fontaine",
+          "first": "Greta",
+          "middle": "J"
+        },
+        "address": {
+          "street": "919 Fieldstone St",
+          "city": "Arlington",
+          "stateOrProvince": "VA",
+          "zipOrPostal": "56788",
+          "country": "US"
+        },
+        "dateOfBirth": "1968-10-18",
+        "occupation": "Import/Export Trader"
+      },
+      "jointFilers": [],
+      "financialAccounts": [
+        {
+          "accountNumber": "TEST-ACCT-0036-A",
+          "accountType": "Bank",
+          "currency": "EUR",
+          "financialInstitution": {
+            "name": "Danube Universal Bank",
+            "address": {
+              "city": "Vienna",
+              "country": "AT"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 22762.51
+        }
+      ],
+      "signature": {
+        "signed": true,
+        "signatureDate": "2025-10-04",
+        "preparerUsed": false
+      },
+      "rejectReason": "Duplicate BSA ID submission detected",
+      "pdfDocument": {
+        "fileName": "FBAR_31000000000036.pdf",
+        "s3Bucket": "irs-cm-fbar-documents-dev",
+        "s3Key": "fbar-pdfs/2024/FBAR_31000000000036.pdf",
+        "contentType": "application/pdf",
+        "sizeBytes": 4323,
+        "sha256": "59f62a88495319d28829eb5550475aefeea1ed1fee94f005cd22b0c0926d7744",
+        "generatedFrom": "synthetic_fbar_filings.json",
+        "note": "Specimen PDF rendered to mirror the FinCEN Form 114 field layout; not an official FinCEN document."
+      }
+    },
+    {
+      "bsaId": "31000000000037",
+      "submissionType": "Original",
+      "filingStatus": "Pending",
+      "taxYear": 2024,
+      "dateFiled": "2025-08-22",
+      "priorReportBsaId": null,
+      "filer": {
+        "filerType": "Individual",
+        "usPersonCategory": "Citizen",
+        "tin": {
+          "type": "SSN",
+          "value": "900-25-1487"
+        },
+        "name": {
+          "last": "Eriksen",
+          "first": "Beatriz",
+          "middle": "T"
+        },
+        "address": {
+          "street": "501 Magnolia Ln",
+          "city": "Eugene",
+          "stateOrProvince": "OR",
+          "zipOrPostal": "77409",
+          "country": "US"
+        },
+        "dateOfBirth": "1975-03-08",
+        "occupation": "Consultant"
+      },
+      "jointFilers": [],
+      "financialAccounts": [
+        {
+          "accountNumber": "TEST-ACCT-0037-A",
+          "accountType": "Bank",
+          "currency": "IDR",
+          "financialInstitution": {
+            "name": "Sunda Strait Commercial Bank",
+            "address": {
+              "city": "Jakarta",
+              "country": "ID"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 3585205.53
+        }
+      ],
+      "signature": {
+        "signed": true,
+        "signatureDate": "2025-08-22",
+        "preparerUsed": false
+      },
+      "pdfDocument": {
+        "fileName": "FBAR_31000000000037.pdf",
+        "s3Bucket": "irs-cm-fbar-documents-dev",
+        "s3Key": "fbar-pdfs/2024/FBAR_31000000000037.pdf",
+        "contentType": "application/pdf",
+        "sizeBytes": 4229,
+        "sha256": "04781603b1e1d7a98b6335b2f49d89e9b11efc58bcb7be0ea126c1d91ed29564",
+        "generatedFrom": "synthetic_fbar_filings.json",
+        "note": "Specimen PDF rendered to mirror the FinCEN Form 114 field layout; not an official FinCEN document."
+      }
+    },
+    {
+      "bsaId": "31000000000038",
+      "submissionType": "Original",
+      "filingStatus": "Pending",
+      "taxYear": 2024,
+      "dateFiled": "2025-10-25",
+      "priorReportBsaId": null,
+      "filer": {
+        "filerType": "Individual",
+        "usPersonCategory": "Citizen",
+        "tin": {
+          "type": "SSN",
+          "value": "900-57-4218"
+        },
+        "name": {
+          "last": "Lindqvist",
+          "first": "Emeka",
+          "middle": "F"
+        },
+        "address": {
+          "street": "713 Lakeshore Ct",
+          "city": "Minneapolis",
+          "stateOrProvince": "MN",
+          "zipOrPostal": "34281",
+          "country": "US"
+        },
+        "dateOfBirth": "1994-12-19",
+        "occupation": "Marine Surveyor"
+      },
+      "jointFilers": [],
+      "financialAccounts": [
+        {
+          "accountNumber": "TEST-ACCT-0038-A",
+          "accountType": "Other",
+          "currency": "NZD",
+          "financialInstitution": {
+            "name": "Vantage Antipodes Bank",
+            "address": {
+              "city": "Auckland",
+              "country": "NZ"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "accountTypeOtherDescription": "Life insurance cash value account",
+          "maxAccountValueUSD": 189431.66
+        }
+      ],
+      "signature": {
+        "signed": true,
+        "signatureDate": "2025-10-25",
+        "preparerUsed": false
+      },
+      "pdfDocument": {
+        "fileName": "FBAR_31000000000038.pdf",
+        "s3Bucket": "irs-cm-fbar-documents-dev",
+        "s3Key": "fbar-pdfs/2024/FBAR_31000000000038.pdf",
+        "contentType": "application/pdf",
+        "sizeBytes": 4281,
+        "sha256": "a0e1583588810cc41f6c1b0581a2b83830719965b35b8d9b007a0f2e92593e88",
+        "generatedFrom": "synthetic_fbar_filings.json",
+        "note": "Specimen PDF rendered to mirror the FinCEN Form 114 field layout; not an official FinCEN document."
+      }
+    },
+    {
+      "bsaId": "31000000000039",
+      "submissionType": "Original",
+      "filingStatus": "Accepted",
+      "taxYear": 2021,
+      "dateFiled": "2022-08-20",
+      "priorReportBsaId": null,
+      "filer": {
+        "filerType": "Individual",
+        "usPersonCategory": "Citizen",
+        "tin": {
+          "type": "SSN",
+          "value": "900-34-6245"
+        },
+        "name": {
+          "last": "Yilmaz",
+          "first": "Saoirse",
+          "middle": "E"
+        },
+        "address": {
+          "street": "35 Magnolia St",
+          "city": "Pittsburgh",
+          "stateOrProvince": "PA",
+          "zipOrPostal": "56452",
+          "country": "US"
+        },
+        "dateOfBirth": "1990-04-08",
+        "occupation": "Marine Surveyor"
+      },
+      "jointFilers": [],
+      "financialAccounts": [
+        {
+          "accountNumber": "TEST-ACCT-0039-A",
+          "accountType": "Securities",
+          "currency": "CAD",
+          "financialInstitution": {
+            "name": "Northern Shore Credit Union",
+            "address": {
+              "city": "Halifax",
+              "country": "CA"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 6782010.51
+        }
+      ],
+      "signature": {
+        "signed": true,
+        "signatureDate": "2022-08-20",
+        "preparerUsed": false
+      },
+      "lateFilingReasonCode": "FBAR_LATE_09",
+      "pdfDocument": {
+        "fileName": "FBAR_31000000000039.pdf",
+        "s3Bucket": "irs-cm-fbar-documents-dev",
+        "s3Key": "fbar-pdfs/2021/FBAR_31000000000039.pdf",
+        "contentType": "application/pdf",
+        "sizeBytes": 4337,
+        "sha256": "a06731f4b971a79d811a6f814b8a7f71b4292bac1176889a14c7bfc490801ac5",
+        "generatedFrom": "synthetic_fbar_filings.json",
+        "note": "Specimen PDF rendered to mirror the FinCEN Form 114 field layout; not an official FinCEN document."
+      }
+    },
+    {
+      "bsaId": "31000000000040",
+      "submissionType": "Original",
+      "filingStatus": "Accepted",
+      "taxYear": 2021,
+      "dateFiled": "2022-12-09",
+      "priorReportBsaId": null,
+      "filer": {
+        "filerType": "Individual",
+        "usPersonCategory": "Citizen",
+        "tin": {
+          "type": "SSN",
+          "value": "900-79-3991"
+        },
+        "name": {
+          "last": "Alvarez",
+          "first": "Mateus",
+          "middle": null
+        },
+        "address": {
+          "street": "540 Riverside Dr",
+          "city": "Springdale",
+          "stateOrProvince": "OH",
+          "zipOrPostal": "19547",
+          "country": "US"
+        },
+        "dateOfBirth": "1983-08-16",
+        "occupation": "Nurse Practitioner"
+      },
+      "jointFilers": [],
+      "financialAccounts": [
+        {
+          "accountNumber": "TEST-ACCT-0040-A",
+          "accountType": "Other",
+          "currency": "AED",
+          "financialInstitution": {
+            "name": "Red Sea Trading Bank",
+            "address": {
+              "city": "Dubai",
+              "country": "AE"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "accountTypeOtherDescription": "Precious metals custody account",
+          "maxAccountValueUSD": 142216.85
+        }
+      ],
+      "signature": {
+        "signed": true,
+        "signatureDate": "2022-12-09",
+        "preparerUsed": false
+      },
+      "lateFilingReasonCode": "FBAR_LATE_03",
+      "pdfDocument": {
+        "fileName": "FBAR_31000000000040.pdf",
+        "s3Bucket": "irs-cm-fbar-documents-dev",
+        "s3Key": "fbar-pdfs/2021/FBAR_31000000000040.pdf",
+        "contentType": "application/pdf",
+        "sizeBytes": 4346,
+        "sha256": "ad79b351b6318b46aaab43f985f74a64a4cc497185d3ca0d06543109c1f18035",
+        "generatedFrom": "synthetic_fbar_filings.json",
+        "note": "Specimen PDF rendered to mirror the FinCEN Form 114 field layout; not an official FinCEN document."
+      }
+    },
+    {
+      "bsaId": "31000000000041",
+      "submissionType": "Original",
+      "filingStatus": "Accepted",
+      "taxYear": 2024,
+      "dateFiled": "2025-07-24",
+      "priorReportBsaId": null,
+      "filer": {
+        "filerType": "Individual",
+        "usPersonCategory": "Citizen",
+        "tin": {
+          "type": "SSN",
+          "value": "900-39-3293"
+        },
+        "name": {
+          "last": "Kowalski",
+          "first": "Zanele",
+          "middle": null
+        },
+        "address": {
+          "street": "499 Harbor View St",
+          "city": "Plano",
+          "stateOrProvince": "TX",
+          "zipOrPostal": "99756",
+          "country": "US"
+        },
+        "dateOfBirth": "1994-06-03",
+        "occupation": "Accountant"
+      },
+      "jointFilers": [],
+      "financialAccounts": [
+        {
+          "accountNumber": "TEST-ACCT-0041-A",
+          "accountType": "SignatureAuthorityOnly",
+          "currency": "CHF",
+          "financialInstitution": {
+            "name": "Alpine Privatbank",
+            "address": {
+              "city": "Zurich",
+              "country": "CH"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 0,
+          "note": "Filer has signature authority only, no financial interest; account value not required"
+        }
+      ],
+      "signature": {
+        "signed": true,
+        "signatureDate": "2025-07-24",
+        "preparerUsed": false
+      },
+      "pdfDocument": {
+        "fileName": "FBAR_31000000000041.pdf",
+        "s3Bucket": "irs-cm-fbar-documents-dev",
+        "s3Key": "fbar-pdfs/2024/FBAR_31000000000041.pdf",
+        "contentType": "application/pdf",
+        "sizeBytes": 4152,
+        "sha256": "3b5e46fd1022dd6a67eec86d149b708f84e8d1223b8453b99e8921127938d97a",
+        "generatedFrom": "synthetic_fbar_filings.json",
+        "note": "Specimen PDF rendered to mirror the FinCEN Form 114 field layout; not an official FinCEN document."
+      }
+    },
+    {
+      "bsaId": "31000000000042",
+      "submissionType": "Original",
+      "filingStatus": "Accepted",
+      "taxYear": 2024,
+      "dateFiled": "2025-02-21",
+      "priorReportBsaId": null,
+      "filer": {
+        "filerType": "Individual",
+        "usPersonCategory": "Citizen",
+        "tin": {
+          "type": "SSN",
+          "value": "900-59-5560"
+        },
+        "name": {
+          "last": "Castellano",
+          "first": "Bram",
+          "middle": "N"
+        },
+        "address": {
+          "street": "37 Willow Grove Ct",
+          "city": "Bellevue",
+          "stateOrProvince": "WA",
+          "zipOrPostal": "25505",
+          "country": "US"
+        },
+        "dateOfBirth": "1972-09-19",
+        "occupation": "Data Scientist"
+      },
+      "jointFilers": [],
+      "financialAccounts": [
+        {
+          "accountNumber": "TEST-ACCT-0042-A",
+          "accountType": "Bank",
+          "currency": "SGD",
+          "financialInstitution": {
+            "name": "Global Trade Finance Bank",
+            "address": {
+              "city": "Singapore",
+              "country": "SG"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 9850000.55,
+          "note": "High-value account for threshold/edge-case testing"
+        }
+      ],
+      "signature": {
+        "signed": true,
+        "signatureDate": "2025-02-21",
+        "preparerUsed": true,
+        "preparerPtin": "P9000200"
+      },
+      "pdfDocument": {
+        "fileName": "FBAR_31000000000042.pdf",
+        "s3Bucket": "irs-cm-fbar-documents-dev",
+        "s3Key": "fbar-pdfs/2024/FBAR_31000000000042.pdf",
+        "contentType": "application/pdf",
+        "sizeBytes": 4326,
+        "sha256": "261ef474ef5e0a5b43284d366aca66f0f9097a7bf978465a02feeb52ae48c9d4",
+        "generatedFrom": "synthetic_fbar_filings.json",
+        "note": "Specimen PDF rendered to mirror the FinCEN Form 114 field layout; not an official FinCEN document."
+      }
+    },
+    {
+      "bsaId": "31000000000043",
+      "submissionType": "Original",
+      "filingStatus": "Accepted",
+      "taxYear": 2024,
+      "dateFiled": "2025-08-24",
+      "priorReportBsaId": null,
+      "filer": {
+        "filerType": "Individual",
+        "usPersonCategory": "Resident Alien",
+        "tin": {
+          "type": "SSN",
+          "value": "900-51-2760"
+        },
+        "name": {
+          "last": "Meier",
+          "first": "Cosima",
+          "middle": null
+        },
+        "address": {
+          "street": "153 Willow Grove St",
+          "city": "Chicago",
+          "stateOrProvince": "IL",
+          "zipOrPostal": "42684",
+          "country": "US"
+        },
+        "dateOfBirth": "1965-12-02",
+        "occupation": "Marine Surveyor"
+      },
+      "jointFilers": [],
+      "financialAccounts": [
+        {
+          "accountNumber": "TEST-ACCT-0043-A",
+          "accountType": "Bank",
+          "currency": "EUR",
+          "financialInstitution": {
+            "name": "Baltic Coast Savings Bank",
+            "address": {
+              "city": "Riga",
+              "country": "LV"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 19234.65
+        },
+        {
+          "accountNumber": "TEST-ACCT-0043-B",
+          "accountType": "Securities",
+          "currency": "GBP",
+          "financialInstitution": {
+            "name": "Kensington Fiduciary Trust Ltd",
+            "address": {
+              "city": "London",
+              "country": "GB"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 201278.64
+        },
+        {
+          "accountNumber": "TEST-ACCT-0043-C",
+          "accountType": "Bank",
+          "currency": "EUR",
+          "financialInstitution": {
+            "name": "Baltic Coast Savings Bank",
+            "address": {
+              "city": "Riga",
+              "country": "LV"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 34203.56
+        },
+        {
+          "accountNumber": "TEST-ACCT-0043-D",
+          "accountType": "Securities",
+          "currency": "EUR",
+          "financialInstitution": {
+            "name": "Emerald Isle Trust",
+            "address": {
+              "city": "Dublin",
+              "country": "IE"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 79824.0
+        },
+        {
+          "accountNumber": "TEST-ACCT-0043-E",
+          "accountType": "Securities",
+          "currency": "PLN",
+          "financialInstitution": {
+            "name": "Continental Union Bank",
+            "address": {
+              "city": "Warsaw",
+              "country": "PL"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 6852.2
+        },
+        {
+          "accountNumber": "TEST-ACCT-0043-F",
+          "accountType": "Other",
+          "currency": "PLN",
+          "financialInstitution": {
+            "name": "Continental Union Bank",
+            "address": {
+              "city": "Warsaw",
+              "country": "PL"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "accountTypeOtherDescription": "Mutual fund omnibus account",
+          "maxAccountValueUSD": 177312.15
+        }
+      ],
+      "signature": {
+        "signed": true,
+        "signatureDate": "2025-08-24",
+        "preparerUsed": false
+      },
+      "pdfDocument": {
+        "fileName": "FBAR_31000000000043.pdf",
+        "s3Bucket": "irs-cm-fbar-documents-dev",
+        "s3Key": "fbar-pdfs/2024/FBAR_31000000000043.pdf",
+        "contentType": "application/pdf",
+        "sizeBytes": 5573,
+        "sha256": "0973ac32003ab7c681aa3c8a109e3b311e75ad5fa40b21fc59e8c5a965e2e9fb",
+        "generatedFrom": "synthetic_fbar_filings.json",
+        "note": "Specimen PDF rendered to mirror the FinCEN Form 114 field layout; not an official FinCEN document."
+      }
+    },
+    {
+      "bsaId": "31000000000044",
+      "submissionType": "Amended",
+      "filingStatus": "Accepted",
+      "taxYear": 2023,
+      "dateFiled": "2024-04-05",
+      "priorReportBsaId": "31000000000045",
+      "filer": {
+        "filerType": "Individual",
+        "usPersonCategory": "Citizen",
+        "tin": {
+          "type": "SSN",
+          "value": "900-82-8743"
+        },
+        "name": {
+          "last": "S\u00f8rensen",
+          "first": "Idris",
+          "middle": "E"
+        },
+        "address": {
+          "street": "449 Fieldstone Ave",
+          "city": "New Orleans",
+          "stateOrProvince": "LA",
+          "zipOrPostal": "66313",
+          "country": "US"
+        },
+        "dateOfBirth": "1969-02-18",
+        "occupation": "Retired"
+      },
+      "jointFilers": [],
+      "financialAccounts": [
+        {
+          "accountNumber": "TEST-ACCT-0044-A",
+          "accountType": "Securities",
+          "currency": "GBP",
+          "financialInstitution": {
+            "name": "Highland Merchant Bank",
+            "address": {
+              "city": "Edinburgh",
+              "country": "GB"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 34426.12
+        }
+      ],
+      "signature": {
+        "signed": true,
+        "signatureDate": "2024-04-05",
+        "preparerUsed": true,
+        "preparerPtin": "P9000045"
+      },
+      "amendmentReason": "Corrected maximum account value from prior submission",
+      "pdfDocument": {
+        "fileName": "FBAR_31000000000044.pdf",
+        "s3Bucket": "irs-cm-fbar-documents-dev",
+        "s3Key": "fbar-pdfs/2023/FBAR_31000000000044.pdf",
+        "contentType": "application/pdf",
+        "sizeBytes": 4417,
+        "sha256": "69e7016f4eea443c37c3b81bd6c669403a060df4d388b9cc0571f04078ab36ca",
+        "generatedFrom": "synthetic_fbar_filings.json",
+        "note": "Specimen PDF rendered to mirror the FinCEN Form 114 field layout; not an official FinCEN document."
+      }
+    },
+    {
+      "bsaId": "31000000000045",
+      "submissionType": "Original",
+      "filingStatus": "AmendedSuperseded",
+      "taxYear": 2021,
+      "dateFiled": "2022-06-22",
+      "priorReportBsaId": null,
+      "filer": {
+        "filerType": "Individual",
+        "usPersonCategory": "Citizen",
+        "tin": {
+          "type": "SSN",
+          "value": "900-82-8743"
+        },
+        "name": {
+          "last": "S\u00f8rensen",
+          "first": "Idris",
+          "middle": "E"
+        },
+        "address": {
+          "street": "449 Fieldstone Ave",
+          "city": "New Orleans",
+          "stateOrProvince": "LA",
+          "zipOrPostal": "66313",
+          "country": "US"
+        },
+        "dateOfBirth": "1969-02-18",
+        "occupation": "Retired"
+      },
+      "jointFilers": [],
+      "financialAccounts": [
+        {
+          "accountNumber": "TEST-ACCT-0044-A",
+          "accountType": "Bank",
+          "currency": "EUR",
+          "financialInstitution": {
+            "name": "Nordbank Handelsbank AG",
+            "address": {
+              "city": "Frankfurt",
+              "country": "DE"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 41832.55
+        }
+      ],
+      "signature": {
+        "signed": true,
+        "signatureDate": "2022-06-22",
+        "preparerUsed": false
+      },
+      "supersededByBsaId": "31000000000044",
+      "pdfDocument": {
+        "fileName": "FBAR_31000000000045.pdf",
+        "s3Bucket": "irs-cm-fbar-documents-dev",
+        "s3Key": "fbar-pdfs/2021/FBAR_31000000000045.pdf",
+        "contentType": "application/pdf",
+        "sizeBytes": 4320,
+        "sha256": "ba2f53ae50b99e0fd2705e31ddb97878b994f65f67aaac6140b21a8e26ccab78",
+        "generatedFrom": "synthetic_fbar_filings.json",
+        "note": "Specimen PDF rendered to mirror the FinCEN Form 114 field layout; not an official FinCEN document."
+      }
+    },
+    {
+      "bsaId": "31000000000046",
+      "submissionType": "Original",
+      "filingStatus": "Accepted",
+      "taxYear": 2023,
+      "dateFiled": "2024-05-06",
+      "priorReportBsaId": null,
+      "filer": {
+        "filerType": "Individual",
+        "usPersonCategory": "Citizen",
+        "tin": {
+          "type": "SSN",
+          "value": "900-64-2380"
+        },
+        "name": {
+          "last": "Nakamura",
+          "first": "Nils",
+          "middle": "G"
+        },
+        "address": {
+          "street": "243 Magnolia Cir",
+          "city": "Portland",
+          "stateOrProvince": "ME",
+          "zipOrPostal": "51537",
+          "country": "US"
+        },
+        "dateOfBirth": "1975-11-18",
+        "occupation": "Airline Pilot"
+      },
+      "jointFilers": [],
+      "financialAccounts": [
+        {
+          "accountNumber": "TEST-ACCT-0046-A",
+          "accountType": "Securities",
+          "currency": "SGD",
+          "financialInstitution": {
+            "name": "Global Trade Finance Bank",
+            "address": {
+              "city": "Singapore",
+              "country": "SG"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": true,
+          "maxAccountValueUSD": 558742.92
+        }
+      ],
+      "signature": {
+        "signed": true,
+        "signatureDate": "2024-05-06",
+        "preparerUsed": false
+      },
+      "pdfDocument": {
+        "fileName": "FBAR_31000000000046.pdf",
+        "s3Bucket": "irs-cm-fbar-documents-dev",
+        "s3Key": "fbar-pdfs/2023/FBAR_31000000000046.pdf",
+        "contentType": "application/pdf",
+        "sizeBytes": 4251,
+        "sha256": "89b569f42875f6c001601d626de3429a2b116b33c91b5b982f7343d19f19e6ef",
+        "generatedFrom": "synthetic_fbar_filings.json",
+        "note": "Specimen PDF rendered to mirror the FinCEN Form 114 field layout; not an official FinCEN document."
+      }
+    },
+    {
+      "bsaId": "31000000000047",
+      "submissionType": "Original",
+      "filingStatus": "Accepted",
+      "taxYear": 2023,
+      "dateFiled": "2024-03-06",
+      "priorReportBsaId": null,
+      "filer": {
+        "filerType": "Individual",
+        "usPersonCategory": "Citizen",
+        "tin": {
+          "type": "SSN",
+          "value": "900-36-5545"
+        },
+        "name": {
+          "last": "Silva",
+          "first": "Adaeze",
+          "middle": "T"
+        },
+        "address": {
+          "street": "365 Birchwood Ln",
+          "city": "Wilmington",
+          "stateOrProvince": "DE",
+          "zipOrPostal": "26973",
+          "country": "US"
+        },
+        "dateOfBirth": "1989-09-05",
+        "occupation": "Small Business Owner"
+      },
+      "jointFilers": [],
+      "financialAccounts": [
+        {
+          "accountNumber": "TEST-ACCT-0047-A",
+          "accountType": "Bank",
+          "currency": "PEN",
+          "financialInstitution": {
+            "name": "Andean Cooperative Bank",
+            "address": {
+              "city": "Lima",
+              "country": "PE"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": true,
+          "maxAccountValueUSD": 26238.93
+        }
+      ],
+      "signature": {
+        "signed": true,
+        "signatureDate": "2024-03-06",
+        "preparerUsed": false
+      },
+      "pdfDocument": {
+        "fileName": "FBAR_31000000000047.pdf",
+        "s3Bucket": "irs-cm-fbar-documents-dev",
+        "s3Key": "fbar-pdfs/2023/FBAR_31000000000047.pdf",
+        "contentType": "application/pdf",
+        "sizeBytes": 4244,
+        "sha256": "e8fe384e9039b7be1bf7a6ecb70baa0324dcd7fe5c9885c1a0928e00d6e2ac24",
+        "generatedFrom": "synthetic_fbar_filings.json",
+        "note": "Specimen PDF rendered to mirror the FinCEN Form 114 field layout; not an official FinCEN document."
+      }
+    },
+    {
+      "bsaId": "31000000000048",
+      "submissionType": "Original",
+      "filingStatus": "Accepted",
+      "taxYear": 2024,
+      "dateFiled": "2025-01-19",
+      "priorReportBsaId": null,
+      "filer": {
+        "filerType": "Individual",
+        "usPersonCategory": "Citizen",
+        "tin": {
+          "type": "SSN",
+          "value": "900-64-9472"
+        },
+        "name": {
+          "last": "Larsson",
+          "first": "Petra",
+          "middle": "C"
+        },
+        "address": {
+          "street": "835 Lakeshore Ave",
+          "city": "San Jose",
+          "stateOrProvince": "CA",
+          "zipOrPostal": "78680",
+          "country": "US"
+        },
+        "dateOfBirth": "1984-01-28",
+        "occupation": "Software Engineer"
+      },
+      "jointFilers": [],
+      "financialAccounts": [
+        {
+          "accountNumber": "TEST-ACCT-0048-A",
+          "accountType": "Bank",
+          "currency": "EUR",
+          "financialInstitution": {
+            "name": "Emerald Isle Trust",
+            "address": {
+              "city": "Dublin",
+              "country": "IE"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 10120.0
+        }
+      ],
+      "signature": {
+        "signed": true,
+        "signatureDate": "2025-01-19",
+        "preparerUsed": false
+      },
+      "pdfDocument": {
+        "fileName": "FBAR_31000000000048.pdf",
+        "s3Bucket": "irs-cm-fbar-documents-dev",
+        "s3Key": "fbar-pdfs/2024/FBAR_31000000000048.pdf",
+        "contentType": "application/pdf",
+        "sizeBytes": 4233,
+        "sha256": "44f7cc0176bd40c8fa5266daa60e592d85d1cf1f72ea0a20fdab72a444b6111d",
+        "generatedFrom": "synthetic_fbar_filings.json",
+        "note": "Specimen PDF rendered to mirror the FinCEN Form 114 field layout; not an official FinCEN document."
+      }
+    },
+    {
+      "bsaId": "31000000000049",
+      "submissionType": "Original",
+      "filingStatus": "Accepted",
+      "taxYear": 2024,
+      "dateFiled": "2025-05-08",
+      "priorReportBsaId": null,
+      "filer": {
+        "filerType": "Individual",
+        "usPersonCategory": "Citizen",
+        "tin": {
+          "type": "SSN",
+          "value": "900-17-3786"
+        },
+        "name": {
+          "last": "Karlsson",
+          "first": "Rowan",
+          "middle": "S"
+        },
+        "address": {
+          "street": "861 Willow Grove St",
+          "city": "Miami",
+          "stateOrProvince": "FL",
+          "zipOrPostal": "84242",
+          "country": "US"
+        },
+        "dateOfBirth": "1974-02-02",
+        "occupation": "Architect"
+      },
+      "jointFilers": [
+        {
+          "tin": {
+            "type": "SSN",
+            "value": "900-33-3699"
+          },
+          "name": {
+            "last": "Karlsson",
+            "first": "Oliver",
+            "middle": null
+          },
+          "relationship": "Spouse"
+        }
+      ],
+      "financialAccounts": [
+        {
+          "accountNumber": "TEST-ACCT-0049-A",
+          "accountType": "Bank",
+          "currency": "GBP",
+          "financialInstitution": {
+            "name": "Kensington Fiduciary Trust Ltd",
+            "address": {
+              "city": "London",
+              "country": "GB"
+            }
+          },
+          "jointOwnerCount": 1,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 379506.85
+        },
+        {
+          "accountNumber": "TEST-ACCT-0049-B",
+          "accountType": "SignatureAuthorityOnly",
+          "currency": "CAD",
+          "financialInstitution": {
+            "name": "Northern Shore Credit Union",
+            "address": {
+              "city": "Halifax",
+              "country": "CA"
+            }
+          },
+          "jointOwnerCount": 1,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 0,
+          "note": "Filer has signature authority only, no financial interest; account value not required"
+        }
+      ],
+      "signature": {
+        "signed": true,
+        "signatureDate": "2025-05-08",
+        "preparerUsed": false
+      },
+      "pdfDocument": {
+        "fileName": "FBAR_31000000000049.pdf",
+        "s3Bucket": "irs-cm-fbar-documents-dev",
+        "s3Key": "fbar-pdfs/2024/FBAR_31000000000049.pdf",
+        "contentType": "application/pdf",
+        "sizeBytes": 4848,
+        "sha256": "b14371c65f5bad2eab47bada38a41bca92458d67236c9ed6849259b449b40c2b",
+        "generatedFrom": "synthetic_fbar_filings.json",
+        "note": "Specimen PDF rendered to mirror the FinCEN Form 114 field layout; not an official FinCEN document."
+      }
+    },
+    {
+      "bsaId": "31000000000050",
+      "submissionType": "Original",
+      "filingStatus": "Accepted",
+      "taxYear": 2024,
+      "dateFiled": "2025-01-19",
+      "priorReportBsaId": null,
+      "filer": {
+        "filerType": "Individual",
+        "usPersonCategory": "Resident Alien",
+        "tin": {
+          "type": "SSN",
+          "value": "900-83-2121"
+        },
+        "name": {
+          "last": "Steiner",
+          "first": "Marina",
+          "middle": null
+        },
+        "address": {
+          "street": "774 Maple Hollow Ave",
+          "city": "Atlanta",
+          "stateOrProvince": "GA",
+          "zipOrPostal": "98358",
+          "country": "US"
+        },
+        "dateOfBirth": "1963-12-09",
+        "occupation": "Journalist"
+      },
+      "jointFilers": [],
+      "financialAccounts": [
+        {
+          "accountNumber": "TEST-ACCT-0050-A",
+          "accountType": "Bank",
+          "currency": "EUR",
+          "financialInstitution": {
+            "name": "Emerald Isle Trust",
+            "address": {
+              "city": "Dublin",
+              "country": "IE"
+            }
+          },
+          "jointOwnerCount": 0,
+          "accountClosedDuringYear": false,
+          "maxAccountValueUSD": 12590.03
+        }
+      ],
+      "signature": {
+        "signed": true,
+        "signatureDate": "2025-01-19",
+        "preparerUsed": false
+      },
+      "pdfDocument": {
+        "fileName": "FBAR_31000000000050.pdf",
+        "s3Bucket": "irs-cm-fbar-documents-dev",
+        "s3Key": "fbar-pdfs/2024/FBAR_31000000000050.pdf",
+        "contentType": "application/pdf",
+        "sizeBytes": 4237,
+        "sha256": "e1446114841407af7a2efe444c8da52f8d2a3caece44a807f29f1b5d159d8462",
+        "generatedFrom": "synthetic_fbar_filings.json",
+        "note": "Specimen PDF rendered to mirror the FinCEN Form 114 field layout; not an official FinCEN document."
+      }
+    }
+  ]
+}
