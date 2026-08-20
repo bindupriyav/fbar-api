@@ -23,8 +23,15 @@ async def health_check(request: Request) -> JSONResponse:
     dynamodb_service = request.app.state.dynamodb_service
     s3_service = request.app.state.s3_service
 
-    dynamodb_healthy = dynamodb_service.health_check()
-    s3_healthy = s3_service.health_check()
+    try:
+        dynamodb_healthy = dynamodb_service.health_check()
+    except Exception:
+        dynamodb_healthy = False
+
+    try:
+        s3_healthy = s3_service.health_check()
+    except Exception:
+        s3_healthy = False
 
     if dynamodb_healthy and s3_healthy:
         return JSONResponse(
@@ -32,12 +39,13 @@ async def health_check(request: Request) -> JSONResponse:
             content={"status": "healthy", "service": "fbar-api"},
         )
 
+    # Return 200 with degraded status so ALB registers the target as healthy
+    # but indicate which dependencies are down
     return JSONResponse(
-        status_code=503,
+        status_code=200,
         content={
-            "error": "service_unavailable",
-            "message": "One or more dependencies are unreachable",
-            "traceId": str(uuid4()),
+            "status": "degraded",
+            "service": "fbar-api",
             "dependencies": {
                 "dynamodb": "healthy" if dynamodb_healthy else "unhealthy",
                 "s3": "healthy" if s3_healthy else "unhealthy",
