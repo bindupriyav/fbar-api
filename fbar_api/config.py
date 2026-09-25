@@ -15,7 +15,7 @@ class Settings(BaseSettings):
     AUTH_TOKEN_STORE: str = "tokens.json"
 
     # Bedrock (FBAR Classification Agent) settings
-    BEDROCK_MODEL_ID: str = "us.anthropic.claude-sonnet-4-20250514-v1:0"
+    BEDROCK_MODEL_ID: str = "us.anthropic.claude-haiku-4-5-20251001-v1:0"
     BEDROCK_MAX_TOKENS: int = 1024
     BEDROCK_TIMEOUT_SECONDS: int = 15
 
@@ -28,4 +28,5 @@ class Settings(BaseSettings):
 def get_settings() -> Settings:
     """Create and return a Settings instance."""
     return Settings()
+
 
