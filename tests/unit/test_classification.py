@@ -317,3 +317,35 @@ def test_classify_endpoint_happy_path(app_with_stub):
     assert body["riskTier"] == "LOW"
     assert "generatedAt" in body
 
+
+
+# ---------------------------------------------------------------------------
+# Regression: DynamoDB Decimal values must serialize in the prompt
+# ---------------------------------------------------------------------------
+
+
+def test_prompt_handles_dynamodb_decimals():
+    from decimal import Decimal
+
+    filing = {
+        "bsaId": "31000000000001",
+        "taxYear": Decimal("2023"),
+        "submissionType": "Original",
+        "dateFiled": "2024-05-07",
+        "signature": {"signed": True, "preparerUsed": False},
+        "filer": {"filerType": "Individual"},
+        "financialAccounts": [
+            {
+                "currency": "CHF",
+                "accountType": "Bank",
+                "maxAccountValueUSD": Decimal("475283.85"),
+                "accountClosedDuringYear": False,
+                "financialInstitution": {"address": {"country": "CH"}},
+            }
+        ],
+    }
+    summary = summarize_filing(filing)
+    signals = build_deterministic_signals(summary)
+    # Should not raise despite Decimal values from DynamoDB
+    content = PromptBuilder.user_content(summary, signals)
+    assert "475283.85" in content

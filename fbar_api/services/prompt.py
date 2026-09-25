@@ -5,6 +5,7 @@ non-accusatory regulatory language.
 """
 
 import json
+from decimal import Decimal
 
 from fbar_api.models.classification import Flag
 
@@ -32,6 +33,13 @@ Rules you MUST follow:
   (e.g., high-risk jurisdiction combined with high aggregate value or missing
   signature) suggests HIGH_RISK.
 - If you assign REVIEW or HIGH_RISK, include at least one flag explaining why."""
+
+
+def _json_default(obj):
+    """JSON encoder fallback: render Decimal as float (DynamoDB returns Decimals)."""
+    if isinstance(obj, Decimal):
+        return float(obj)
+    raise TypeError(f"Object of type {obj.__class__.__name__} is not JSON serializable")
 
 
 class PromptBuilder:
@@ -62,5 +70,5 @@ class PromptBuilder:
         return (
             "Classify the following FBAR filing. Consider the deterministic signals "
             "as authoritative evidence of the conditions they describe.\n\n"
-            + json.dumps(payload, indent=2)
+            + json.dumps(payload, indent=2, default=_json_default)
         )
