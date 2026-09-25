@@ -29,5 +29,3 @@ Thumbs.db
 .env
 *.env.local
 
-# Kiro metadata (keep specs, ignore cache)
-.kiro/specs/**/.meta.json
