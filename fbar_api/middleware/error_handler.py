@@ -1,4 +1,4 @@
-"""Error handling middleware and custom exception hierarchy."""
+﻿"""Error handling middleware and custom exception hierarchy."""
 
 import logging
 from uuid import uuid4
@@ -71,8 +71,19 @@ class UnprocessableError(FbarApiError):
         super().__init__(message)
 
 
+class BedrockError(FbarApiError):
+    """Raised when the Bedrock classification call fails, times out, or returns
+    output that cannot be parsed/validated into the expected schema."""
+
+    status_code: int = 502
+    error_code: str = "classification_unavailable"
+
+    def __init__(self, message: str = "The classification service is currently unavailable"):
+        super().__init__(message)
+
+
 # ---------------------------------------------------------------------------
-# HTTP status → error code mapping for HTTPException without structured detail
+# HTTP status â†’ error code mapping for HTTPException without structured detail
 # ---------------------------------------------------------------------------
 
 _STATUS_TO_ERROR_CODE: dict[int, str] = {
@@ -97,10 +108,10 @@ class ErrorEnvelopeMiddleware(BaseHTTPMiddleware):
     """Catches exceptions and returns standardised ErrorEnvelope JSON responses.
 
     Handles:
-    - FbarApiError subclasses → mapped directly via their status_code/error_code
-    - HTTPException → detail may be a pre-formatted dict or a plain string
-    - Pydantic ValidationError → "bad_request" with validation details
-    - Unhandled exceptions → "internal_error" with sanitized generic message
+    - FbarApiError subclasses â†’ mapped directly via their status_code/error_code
+    - HTTPException â†’ detail may be a pre-formatted dict or a plain string
+    - Pydantic ValidationError â†’ "bad_request" with validation details
+    - Unhandled exceptions â†’ "internal_error" with sanitized generic message
     """
 
     async def dispatch(self, request: Request, call_next):
@@ -216,3 +227,4 @@ class ErrorEnvelopeMiddleware(BaseHTTPMiddleware):
         if len(message) > 256:
             return message[:253] + "..."
         return message
+

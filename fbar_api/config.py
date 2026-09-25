@@ -1,4 +1,4 @@
-"""Configuration module using pydantic-settings for environment variable loading."""
+﻿"""Configuration module using pydantic-settings for environment variable loading."""
 
 from pydantic_settings import BaseSettings
 
@@ -14,6 +14,11 @@ class Settings(BaseSettings):
     AWS_REGION: str = "us-east-2"
     AUTH_TOKEN_STORE: str = "tokens.json"
 
+    # Bedrock (FBAR Classification Agent) settings
+    BEDROCK_MODEL_ID: str = "us.anthropic.claude-sonnet-4-20250514-v1:0"
+    BEDROCK_MAX_TOKENS: int = 1024
+    BEDROCK_TIMEOUT_SECONDS: int = 15
+
     model_config = {
         "env_file": ".env",
         "env_file_encoding": "utf-8",
@@ -23,3 +28,4 @@ class Settings(BaseSettings):
 def get_settings() -> Settings:
     """Create and return a Settings instance."""
     return Settings()
+

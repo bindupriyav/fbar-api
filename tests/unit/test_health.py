@@ -60,45 +60,45 @@ def test_health_returns_200_when_dependencies_healthy(app, client):
     assert body == {"status": "healthy", "service": "fbar-api"}
 
 
-def test_health_returns_503_when_dynamodb_unhealthy(app, client):
-    """GET /health returns 503 when DynamoDB is unreachable."""
+def test_health_returns_200_degraded_when_dynamodb_unhealthy(app, client):
+    """GET /health returns 200 degraded when DynamoDB is unreachable."""
     app.state.dynamodb_service.health_check.return_value = False
     app.state.s3_service.health_check.return_value = True
 
     response = client.get("/health")
 
-    assert response.status_code == 503
+    assert response.status_code == 200
     body = response.json()
-    assert body["error"] == "service_unavailable"
-    assert body["message"] == "One or more dependencies are unreachable"
-    assert "traceId" in body
+    assert body["status"] == "degraded"
+    assert body["service"] == "fbar-api"
     assert body["dependencies"]["dynamodb"] == "unhealthy"
     assert body["dependencies"]["s3"] == "healthy"
 
 
-def test_health_returns_503_when_s3_unhealthy(app, client):
-    """GET /health returns 503 when S3 is unreachable."""
+def test_health_returns_200_degraded_when_s3_unhealthy(app, client):
+    """GET /health returns 200 degraded when S3 is unreachable."""
     app.state.dynamodb_service.health_check.return_value = True
     app.state.s3_service.health_check.return_value = False
 
     response = client.get("/health")
 
-    assert response.status_code == 503
+    assert response.status_code == 200
     body = response.json()
-    assert body["error"] == "service_unavailable"
+    assert body["status"] == "degraded"
     assert body["dependencies"]["dynamodb"] == "healthy"
     assert body["dependencies"]["s3"] == "unhealthy"
 
 
-def test_health_returns_503_when_both_unhealthy(app, client):
-    """GET /health returns 503 when both dependencies are unreachable."""
+def test_health_returns_200_degraded_when_both_unhealthy(app, client):
+    """GET /health returns 200 degraded when both dependencies are unreachable."""
     app.state.dynamodb_service.health_check.return_value = False
     app.state.s3_service.health_check.return_value = False
 
     response = client.get("/health")
 
-    assert response.status_code == 503
+    assert response.status_code == 200
     body = response.json()
+    assert body["status"] == "degraded"
     assert body["dependencies"]["dynamodb"] == "unhealthy"
     assert body["dependencies"]["s3"] == "unhealthy"
 
@@ -118,15 +118,14 @@ def test_health_accepts_request_with_authorization_header(app, client):
     assert body == {"status": "healthy", "service": "fbar-api"}
 
 
-def test_health_503_response_has_valid_uuid_trace_id(app, client):
-    """GET /health 503 response contains a valid UUID v4 traceId."""
+def test_health_degraded_response_reports_dependency_status(app, client):
+    """GET /health degraded response reports per-dependency status."""
     app.state.dynamodb_service.health_check.return_value = False
     app.state.s3_service.health_check.return_value = True
 
     response = client.get("/health")
 
+    assert response.status_code == 200
     body = response.json()
-    trace_id = body["traceId"]
-    # Validate it's a valid UUID
-    parsed = uuid.UUID(trace_id)
-    assert parsed.version == 4
+    assert body["status"] == "degraded"
+    assert set(body["dependencies"].keys()) == {"dynamodb", "s3"}

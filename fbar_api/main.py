@@ -9,8 +9,11 @@ from fbar_api.routes.case_link import router as case_link_router
 from fbar_api.routes.filings import router as filings_router
 from fbar_api.routes.health import router as health_router
 from fbar_api.routes.pdf import router as pdf_router
+from fbar_api.routes.classify import router as classify_router
 from fbar_api.services.dynamodb import DynamoDBService
 from fbar_api.services.s3 import S3Service
+from fbar_api.services.bedrock import BedrockService
+from fbar_api.services.classification import ClassificationService
 
 
 def create_app(settings: Settings | None = None) -> FastAPI:
@@ -38,6 +41,10 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     # Initialize service instances and store on app state
     app.state.dynamodb_service = DynamoDBService(settings)
     app.state.s3_service = S3Service(settings)
+    app.state.bedrock_service = BedrockService(settings)
+    app.state.classification_service = ClassificationService(
+        settings, app.state.bedrock_service
+    )
 
     # Mount health router at root level (no auth required)
     app.include_router(health_router)
@@ -53,6 +60,9 @@ def create_app(settings: Settings | None = None) -> FastAPI:
 
     # Mount PDF router (requires fbar:read scope)
     app.include_router(pdf_router)
+
+    # Mount classification router (AI agent, requires fbar:read scope)
+    app.include_router(classify_router)
 
     # Register middleware (Starlette applies in LIFO order, so register
     # inner middleware first, outer middleware last):

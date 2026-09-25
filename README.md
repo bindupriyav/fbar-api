@@ -424,3 +424,61 @@ fbar-api/
 ├── buildspec.yml              # AWS CodeBuild CI/CD
 └── requirements.txt           # Python dependencies
 ```
+
+
+## FBAR Classification Agent (AI)
+
+An AI-powered compliance-risk classification endpoint layered on the existing FBAR API. It retrieves a filing, computes deterministic compliance signals in code, and uses AWS Bedrock (Claude) to assign a risk tier with an explanation.
+
+### Endpoint
+
+| Method | Path | Scope | Description |
+|--------|------|-------|-------------|
+| GET | `/api/v1/fbar/filings/{bsaId}/classify` | fbar:read | Classify a filing's compliance risk |
+
+### Example
+
+```bash
+curl -H "Authorization: Bearer dev-token-read-only" \
+  http://<host>/api/v1/fbar/filings/31000000000001/classify
+```
+
+Response (200):
+```json
+{
+  "bsaId": "31000000000001",
+  "riskTier": "REVIEW",
+  "confidence": 0.72,
+  "flags": [
+    {"code": "HIGH_RISK_JURISDICTION", "description": "Accounts located in higher-risk jurisdiction(s): CH"}
+  ],
+  "explanation": "Filing 31000000000001 warrants review because ...",
+  "model": "anthropic.claude-3-5-sonnet-20240620-v1:0",
+  "generatedAt": "2026-01-01T00:00:00Z"
+}
+```
+
+### Risk tiers
+
+- `LOW` — no elevated signals detected
+- `REVIEW` — one or more moderate signals warrant review
+- `HIGH_RISK` — multiple or severe signals warrant priority review
+
+### Deterministic signals
+
+`HIGH_RISK_JURISDICTION`, `HIGH_AGGREGATE_VALUE`, `THRESHOLD_CLUSTERING`, `LATE_FILING`, `AMENDED_OR_PRIOR`, `MISSING_SIGNATURE`, `INCOMPLETE_DATA`.
+
+### Configuration (environment variables)
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `BEDROCK_MODEL_ID` | anthropic.claude-3-5-sonnet-20240620-v1:0 | Bedrock model id |
+| `BEDROCK_MAX_TOKENS` | 1024 | Max output tokens |
+| `BEDROCK_TIMEOUT_SECONDS` | 15 | Bedrock call timeout |
+
+### Deployment notes
+
+- Grant `bedrock:InvokeModel` on the target model ARN to the ECS task role (`fbar-api-task-role`).
+- Enable the chosen Claude model in AWS Bedrock model access for the deployment region.
+- On Bedrock failure/timeout or unparseable output, the endpoint returns HTTP 502 (`classification_unavailable`).
+- No new infrastructure required — this is an additive endpoint on the existing ECS service.
