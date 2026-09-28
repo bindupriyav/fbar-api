@@ -260,6 +260,12 @@ class ClassificationService:
         summary = summarize_filing(filing)
         signals = build_deterministic_signals(summary)
 
+        # Mock mode: derive the classification from deterministic signals without
+        # calling Bedrock. Useful for demos/offline testing when the Bedrock
+        # daily token quota is exhausted. Enabled via BEDROCK_MOCK=true.
+        if getattr(self._settings, "BEDROCK_MOCK", False):
+            return self._mock_classify(bsa_id, signals)
+
         system_prompt = PromptBuilder.system_prompt()
         user_content = PromptBuilder.user_content(summary, signals)
 
@@ -301,3 +307,54 @@ class ClassificationService:
             )
 
         return result
+
+
+    def _mock_classify(self, bsa_id, signals):
+        """Produce a deterministic ClassificationResult from signals (no LLM call).
+
+        Tiering rule:
+        - 0 signals -> LOW
+        - 1-2 signals -> REVIEW
+        - 3+ signals, or any HIGH_RISK_JURISDICTION + HIGH_AGGREGATE_VALUE -> HIGH_RISK
+        """
+        from datetime import datetime, timezone
+
+        from fbar_api.models.classification import ClassificationResult
+
+        codes = {f.code for f in signals}
+        n = len(signals)
+        severe = "HIGH_RISK_JURISDICTION" in codes and "HIGH_AGGREGATE_VALUE" in codes
+
+        if n == 0:
+            tier = "LOW"
+            confidence = 0.9
+            explanation = (
+                f"Filing {bsa_id} shows no elevated compliance signals and does not "
+                f"appear to warrant additional review at this time."
+            )
+        elif n <= 2 and not severe:
+            tier = "REVIEW"
+            confidence = 0.7
+            explanation = (
+                f"Filing {bsa_id} shows {n} compliance signal(s) that warrant review: "
+                + ", ".join(sorted(codes))
+                + "."
+            )
+        else:
+            tier = "HIGH_RISK"
+            confidence = 0.85
+            explanation = (
+                f"Filing {bsa_id} shows multiple or severe compliance signals that "
+                f"warrant priority review: " + ", ".join(sorted(codes)) + "."
+            )
+
+        generated_at = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+        return ClassificationResult(
+            bsaId=bsa_id,
+            riskTier=tier,
+            confidence=confidence,
+            flags=signals,
+            explanation=explanation,
+            model="mock-deterministic",
+            generatedAt=generated_at,
+        )

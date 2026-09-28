@@ -18,6 +18,7 @@ class Settings(BaseSettings):
     BEDROCK_MODEL_ID: str = "us.anthropic.claude-haiku-4-5-20251001-v1:0"
     BEDROCK_MAX_TOKENS: int = 1024
     BEDROCK_TIMEOUT_SECONDS: int = 15
+    BEDROCK_MOCK: bool = False
 
     model_config = {
         "env_file": ".env",
@@ -28,5 +29,6 @@ class Settings(BaseSettings):
 def get_settings() -> Settings:
     """Create and return a Settings instance."""
     return Settings()
+
 
 

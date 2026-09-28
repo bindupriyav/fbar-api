@@ -349,3 +349,34 @@ def test_prompt_handles_dynamodb_decimals():
     # Should not raise despite Decimal values from DynamoDB
     content = PromptBuilder.user_content(summary, signals)
     assert "475283.85" in content
+
+
+# ---------------------------------------------------------------------------
+# Mock mode (BEDROCK_MOCK=true) - deterministic classification without Bedrock
+# ---------------------------------------------------------------------------
+
+
+class _NoCallBedrock:
+    model_id = "unused"
+
+    def invoke(self, *args, **kwargs):
+        raise AssertionError("Bedrock must not be called in mock mode")
+
+
+def test_mock_mode_clean_filing_is_low():
+    settings = Settings(BEDROCK_MOCK=True, AUTH_TOKEN_STORE="tokens.json")
+    svc = ClassificationService(settings, _NoCallBedrock())
+    result = svc.classify(_clean_filing())
+    assert result.riskTier == "LOW"
+    assert result.flags == []
+    assert result.model == "mock-deterministic"
+
+
+def test_mock_mode_risky_filing_is_high_risk():
+    settings = Settings(BEDROCK_MOCK=True, AUTH_TOKEN_STORE="tokens.json")
+    svc = ClassificationService(settings, _NoCallBedrock())
+    result = svc.classify(_risky_filing())
+    assert result.riskTier == "HIGH_RISK"
+    codes = {f.code for f in result.flags}
+    assert "HIGH_RISK_JURISDICTION" in codes
+    assert result.bsaId == "31000000000999"
